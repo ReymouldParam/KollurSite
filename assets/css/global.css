@@ -1,0 +1,86 @@
+:root{
+    --theme-color1: #22668D; /* rgba(34, 102, 141, 1) */
+    --theme-color2: #8ECDDD; /* rgba(142, 205, 221, 1) */
+    --theme-color3: #FFFADD; /* rgba(255, 250, 221, 1) */
+    --theme-color4: #FFCC70; /* rgba(255, 204, 112, 1) */
+    --main-heading-color: #f9f6e7;
+    --sub-heading-color: #f9f4db;
+    --main-heading-font: 'Libre Baskerville', serif;
+    --sub-heading-font: 'Oswald', sans-serif;
+    --text-font: 'Crimson Text', serif;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    position: relative;
+}
+
+.main-heading{
+    font-family: var(--main-heading-font);
+    color: var(--main-heading-color);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.sub-heading{
+    font-family: var(--sub-heading-font);
+    color: var(--main-heading-color);
+}
+
+/* header styles */
+
+#pageHeader{
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5vh 5vh;
+}
+
+.header-logo-container{
+    width: 20%;
+}
+
+.header-logo-container > img{
+    width: 100%;
+}
+
+.navbar-container{
+    display: flex;
+    justify-content: space-around;
+    /* width: 50%; */
+}
+
+.navbar-container > a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    margin: 0 10px;
+}
+
+.navbar-container > a:hover{
+    color: var(--theme-color2);
+}
+
+
+/* mobile media quaries */
+
+@media screen  and (max-width: 500px) {
+    #pageHeader{
+        padding:3vh;
+    }
+
+    .header-logo-container{
+        width: 50%;
+    }
+    .navbar-container{
+        display: none;
+    }
+}
