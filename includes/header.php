@@ -5,7 +5,7 @@
 
     <div class="navbar-container">
         <a href=".">Home</a>
-        <a href="">About Us</a>
+        <a href="#aboutUs-section">About Us</a>
         <a href="#ourHighlights-section">Our Highlights</a>
         <a href="#gallery-section">Gallery</a>
         <a href="">Amenities</a>

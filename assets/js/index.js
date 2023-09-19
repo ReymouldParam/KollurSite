@@ -39,3 +39,26 @@ $(document).ready(function() {
       ]
     });
 });
+
+
+// floting elements
+
+const parentDiv = document.getElementById('home-section');
+const elementToChange = document.querySelector(".home-section-1-absolute-img-1");
+
+function isBottomVisible() {
+  const parentRect = parentDiv.getBoundingClientRect();
+  return parentRect.bottom <= window.innerHeight;
+}
+
+function handleScroll() {
+  if (isBottomVisible()) {
+    elementToChange.style.position = "absolute";
+  } else {
+    elementToChange.style.position = "fixed";
+  }
+}
+
+window.addEventListener("scroll", function(){
+  handleScroll();  
+});
