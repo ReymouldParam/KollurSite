@@ -43,6 +43,7 @@
         </div>
     <!-- absolute images -->
     <img src="assets/images/apartment-2.png" class="home-section-1-absolute-img-1" alt="apartment-image">
+    <div class="home-section-1-overlay"></div>
         
     </section>
 
@@ -182,20 +183,40 @@
             <h1 class="main-heading">Gallery</h1>
             <div class="gallery-main-container">
                 <div class="gallery-carousel">
-                    <div class="gallery-img-container">
+                    <div class="gallery-img-container" data-value="0">
                         <img src="assets/images/gallery/balcony-view1.png" alt="gallery-image">
                     </div>
-                    <div class="gallery-img-container">
+                    <div class="gallery-img-container"  data-value="1">
                         <img src="assets/images/gallery/Bedroom1.png" alt="gallery-image">
                     </div>
-                    <div class="gallery-img-container">
+                    <div class="gallery-img-container"  data-value="2">
                         <img src="assets/images/gallery/Gym-View1.png" alt="gallery-image">
                     </div>
-                    <div class="gallery-img-container">
+                    <div class="gallery-img-container"  data-value="3">
                         <img src="assets/images/gallery/Multipurpose-Hall1.png" alt="gallery-image">
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="gallery-popup-container">
+            <div class="gallery-popup-inner-container">
+                <div class="gallery-popup-carousel">
+                    <div class="gallery-popup-img-container">
+                        <img src="assets/images/gallery/balcony-view1.png" alt="gallery-image">
+                    </div>
+                    <div class="gallery-popup-img-container">
+                        <img src="assets/images/gallery/Bedroom1.png" alt="gallery-image">
+                    </div>
+                    <div class="gallery-popup-img-container">
+                        <img src="assets/images/gallery/Gym-View1.png" alt="gallery-image">
+                    </div>
+                    <div class="gallery-popup-img-container">
+                        <img src="assets/images/gallery/Multipurpose-Hall1.png" alt="gallery-image">
+                    </div>
+                </div>
+            </div>
+            <button class="close-gallery-popup-btn" onclick="closeGalleryPopup()">x</button>
         </div>
     </section>
 

@@ -18,7 +18,18 @@
     right: 0;
     width: 50vw;
     height: 80vh;
+    z-index: 1;
     animation: moveInLeft 1s;
+}
+
+.home-section-1-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    top: 0;
+    right: 0;
+    z-index: 0;
 }
 
 .home-section-1-container{
@@ -70,6 +81,8 @@
     height: 500px;
     width: 50%;
     padding: 5%;
+    position: relative;
+    z-index: 3;
 }
 
 .home-section-1-aboutus > .main-heading{
@@ -234,6 +247,7 @@
     align-items: center;
     display: flex;
     justify-content: center;
+    cursor: pointer;
 }
 
 .gallery-img-container > img{
@@ -249,6 +263,46 @@
 
 .gallery-carousel > .slick-prev{
     left: -30px;
+}
+
+.gallery-popup-container{
+    width:100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 4%;
+    z-index: 10;
+    background-color: rgba(0,0,0,0.8);
+    display: none;
+}
+
+.gallery-popup-container > .gallery-popup-inner-container , .gallery-popup-container > .gallery-popup-inner-container > .gallery-popup-carousel {
+    width: 100%;
+    height: 100%;
+}
+
+.gallery-popup-img-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+ .gallery-popup-img-container > img{
+    width: auto;
+    height: 85vh;
+    margin: auto;
+}
+
+.gallery-popup-container > .close-gallery-popup-btn{
+    position: absolute;
+    color: white;
+    font-size: 40px;
+    background-color: rgba(0,0,0,0);
+    border: 0;
+    top:1%;
+    right: 8%;
 }
 
 /*******************/
