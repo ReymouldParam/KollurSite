@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kollu</title>
+    <title>Kollur</title>
 
     <?php
         include 'includes/header-links.php'
@@ -22,8 +21,8 @@
         <div class="home-section-1-container">
             <div class="section-1-inner-1">
                 <div class="section-1-content">
-                    <h1 class="main-heading">Discover Our Exquisite Apartments</h1>
-                    <h4 class="sub-heading">Modern Comfort and Luxury Await You</h4>
+                    <h1 class="main-heading" id="landingPara1"></h1>
+                    <h4 class="sub-heading" id="landingPara2"></h4>
                     <div class="btn-container">
                         <button class="btn section-1-btn">Amenities</button>
                         <button class="btn section-1-btn">Contact</button>
@@ -50,58 +49,58 @@
     <section class="home-section-2" id="ourHighlights-section">
         <div class="home-section-2-container">
             <h1 class="main-heading">Project Highlights</h1>
-            <div class="amenities-container">
-                <div class="amenities-container-row">
-                    <div class="amenities-row-inner">
-                        <div class="amenities-item-container">
-                            <div class="amenities-img-container">
-                                <img src="assets/images/amenities/1.png" alt="">
+            <div class="highlights-container">
+                <div class="highlights-container-row">
+                    <div class="highlights-row-inner">
+                        <div class="highlights-item-container">
+                            <div class="highlights-img-container">
+                                <img src="assets/images/highlights/1.png" alt="">
                             </div>
-                            <h4 class="sub-heading amenities-heading">1 BLOCK</h4>
+                            <h4 class="sub-heading highlights-heading">1 BLOCK</h4>
 
-                            <div class="amenities-overlay">
-                                <h2 class="sub-heading amenities-heading">1 BLOCK</h2>
+                            <div class="highlights-overlay">
+                                <h2 class="sub-heading highlights-heading">1 BLOCK</h2>
                                 <p>
                                     A luxary apartment for sale with 1 block and 4 floors.A luxary apartment for sale with 1 block and 4 floors. A luxary apartment for sale with 1 block and 4 floors. 
                                 </p>
                             </div>
                         </div>
-                        <div class="amenities-item-container">
-                        <div class="amenities-img-container">
-                                <img src="assets/images/amenities/2.png" alt="">
+                        <div class="highlights-item-container">
+                        <div class="highlights-img-container">
+                                <img src="assets/images/highlights/2.png" alt="">
                             </div>
-                            <h4 class="sub-heading amenities-heading">1 BLOCK</h4>
+                            <h4 class="sub-heading highlights-heading">1 BLOCK</h4>
 
-                            <div class="amenities-overlay">
-                                <h2 class="sub-heading amenities-heading">1 BLOCK</h2>
+                            <div class="highlights-overlay">
+                                <h2 class="sub-heading highlights-heading">1 BLOCK</h2>
                                 <p>
                                     A luxary apartment for sale with 1 block and 4 floors.A luxary apartment for sale with 1 block and 4 floors. A luxary apartment for sale with 1 block and 4 floors. 
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div class="amenities-row-inner">
-                        <div class="amenities-item-container">
-                        <div class="amenities-img-container">
-                                <img src="assets/images/amenities/3.png" alt="">
+                    <div class="highlights-row-inner">
+                        <div class="highlights-item-container">
+                        <div class="highlights-img-container">
+                                <img src="assets/images/highlights/3.png" alt="">
                             </div>
-                            <h4 class="sub-heading amenities-heading">1 BLOCK</h4>
+                            <h4 class="sub-heading highlights-heading">1 BLOCK</h4>
 
-                            <div class="amenities-overlay">
-                                <h2 class="sub-heading amenities-heading">1 BLOCK</h2>
+                            <div class="highlights-overlay">
+                                <h2 class="sub-heading highlights-heading">1 BLOCK</h2>
                                 <p>
                                     A luxary apartment for sale with 1 block and 4 floors.A luxary apartment for sale with 1 block and 4 floors. A luxary apartment for sale with 1 block and 4 floors. 
                                 </p>
                             </div>
                         </div>
-                        <div class="amenities-item-container">
-                        <div class="amenities-img-container">
-                                <img src="assets/images/amenities/4.png" alt="">
+                        <div class="highlights-item-container">
+                        <div class="highlights-img-container">
+                                <img src="assets/images/highlights/4.png" alt="">
                             </div>
-                            <h4 class="sub-heading amenities-heading">1 BLOCK</h4>
+                            <h4 class="sub-heading highlights-heading">1 BLOCK</h4>
 
-                            <div class="amenities-overlay">
-                                <h2 class="sub-heading amenities-heading">1 BLOCK</h2>
+                            <div class="highlights-overlay">
+                                <h2 class="sub-heading highlights-heading">1 BLOCK</h2>
                                 <p>
                                     A luxary apartment for sale with 1 block and 4 floors.A luxary apartment for sale with 1 block and 4 floors. A luxary apartment for sale with 1 block and 4 floors. 
                                 </p>
@@ -109,57 +108,57 @@
                         </div>
                     </div>
                 </div>
-                <div class="amenities-container-row">
-                    <div class="amenities-row-inner">
-                        <div class="amenities-item-container">
-                        <div class="amenities-img-container">
-                                <img src="assets/images/amenities/5.png" alt="">
+                <div class="highlights-container-row">
+                    <div class="highlights-row-inner">
+                        <div class="highlights-item-container">
+                        <div class="highlights-img-container">
+                                <img src="assets/images/highlights/5.png" alt="">
                             </div>
-                            <h4 class="sub-heading amenities-heading">1 BLOCK</h4>
+                            <h4 class="sub-heading highlights-heading">1 BLOCK</h4>
 
-                            <div class="amenities-overlay">
-                                <h2 class="sub-heading amenities-heading">1 BLOCK</h2>
+                            <div class="highlights-overlay">
+                                <h2 class="sub-heading highlights-heading">1 BLOCK</h2>
                                 <p>
                                     A luxary apartment for sale with 1 block and 4 floors.A luxary apartment for sale with 1 block and 4 floors. A luxary apartment for sale with 1 block and 4 floors. 
                                 </p>
                             </div>
                         </div>
-                        <div class="amenities-item-container">
-                        <div class="amenities-img-container">
-                                <img src="assets/images/amenities/1.png" alt="">
+                        <div class="highlights-item-container">
+                        <div class="highlights-img-container">
+                                <img src="assets/images/highlights/1.png" alt="">
                             </div>
-                            <h4 class="sub-heading amenities-heading">1 BLOCK</h4>
+                            <h4 class="sub-heading highlights-heading">1 BLOCK</h4>
 
-                            <div class="amenities-overlay">
-                                <h2 class="sub-heading amenities-heading">1 BLOCK</h2>
+                            <div class="highlights-overlay">
+                                <h2 class="sub-heading highlights-heading">1 BLOCK</h2>
                                 <p>
                                     A luxary apartment for sale with 1 block and 4 floors.A luxary apartment for sale with 1 block and 4 floors. A luxary apartment for sale with 1 block and 4 floors. 
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div class="amenities-row-inner">
-                        <div class="amenities-item-container">
-                        <div class="amenities-img-container">
-                                <img src="assets/images/amenities/1.png" alt="">
+                    <div class="highlights-row-inner">
+                        <div class="highlights-item-container">
+                        <div class="highlights-img-container">
+                                <img src="assets/images/highlights/1.png" alt="">
                             </div>
-                            <h4 class="sub-heading amenities-heading">1 BLOCK</h4>
+                            <h4 class="sub-heading highlights-heading">1 BLOCK</h4>
 
-                            <div class="amenities-overlay">
-                                <h2 class="sub-heading amenities-heading">1 BLOCK</h2>
+                            <div class="highlights-overlay">
+                                <h2 class="sub-heading highlights-heading">1 BLOCK</h2>
                                 <p>
                                     A luxary apartment for sale with 1 block and 4 floors.A luxary apartment for sale with 1 block and 4 floors. A luxary apartment for sale with 1 block and 4 floors. 
                                 </p>
                             </div>
                         </div>
-                        <div class="amenities-item-container">
-                        <div class="amenities-img-container">
-                                <img src="assets/images/amenities/1.png" alt="">
+                        <div class="highlights-item-container">
+                        <div class="highlights-img-container">
+                                <img src="assets/images/highlights/1.png" alt="">
                             </div>
-                            <h4 class="sub-heading amenities-heading">1 BLOCK</h4>
+                            <h4 class="sub-heading highlights-heading">1 BLOCK</h4>
 
-                            <div class="amenities-overlay">
-                                <h2 class="sub-heading amenities-heading">1 BLOCK</h2>
+                            <div class="highlights-overlay">
+                                <h2 class="sub-heading highlights-heading">1 BLOCK</h2>
                                 <p>
                                     A luxary apartment for sale with 1 block and 4 floors.A luxary apartment for sale with 1 block and 4 floors. A luxary apartment for sale with 1 block and 4 floors. 
                                 </p>
