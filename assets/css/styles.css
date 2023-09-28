@@ -229,10 +229,6 @@
     text-align: center;
 }
 
-/* .home-section-3-container > .main-heading{
-    color: var(--theme-color1);
-} */
-
 .gallery-main-container{
     width: 100%;
     margin: auto;
@@ -311,6 +307,50 @@
     top:1%;
     right: 8%;
 }
+
+/* Amenities section */
+
+.home-section-amenities{
+    height: auto;
+    width: 100%;
+    position: relative;
+    padding: 5vh 5vh;
+    background-color: var(--theme-color1);
+    
+}
+
+.popup-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.popup-container {
+    display: flex;
+}
+
+.popup {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s;
+}
+
+.popup img {
+    width: 100%;
+    height: 100%;
+    object-fit: cove;
+}
+
+.popup:hover {
+    transform: scale(1.1);
+    z-index: 1;
+}
+
 
 /*******************/
 /*section 4 styles*/

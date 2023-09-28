@@ -24,8 +24,8 @@
                     <h1 class="main-heading" id="landingPara1"></h1>
                     <h4 class="sub-heading" id="landingPara2"></h4>
                     <div class="btn-container">
-                        <button class="btn section-1-btn">Amenities</button>
-                        <button class="btn section-1-btn">Contact</button>
+                        <button class="btn section-1-btn" onclick="navigateAmenities()">Amenities</button>
+                        <button class="btn section-1-btn" onclick="navigateContact()">Contact</button>
                     </div>
                 </div>
             </div>
@@ -218,6 +218,32 @@
             <button class="close-gallery-popup-btn" onclick="closeGalleryPopup()">x</button>
         </div>
     </section>
+    <!-- section for amenities -->
+
+    <section class="home-section-amenities" id="amenities-section">
+        <div class="amenities-section-container">
+            <h1 class="main-heading">Amenities</h1>
+            <div class="popup-container">
+                <div class="popup">
+                    <img src="assets/images/amenities/gym.jpg" alt="amenities-image">
+                    <p>GYM</p>
+                </div>
+                <div class="popup">
+                    <img src="assets/images/amenities/interior.jpg" alt="amenities-image">
+                    <p>INTERIOR</p>
+                </div>
+                <div class="popup">
+                    <img src="assets/images/amenities/playarea.jpg" alt="amenities-image">
+                    <p>PLAY AREA</p>
+                </div>
+                <div class="popup">
+                    <img src="assets/images/amenities/swimming.jpg" alt="amenities-image">
+                    <p>SWIMMING POOL</p>
+                </div>
+            </div>
+        </div>        
+    </section>
+
 
     <!-- ***************************
          Section four location

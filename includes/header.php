@@ -8,7 +8,7 @@
         <a href="#aboutUs-section" id="aboutus-link">About Us</a>
         <a href="#ourHighlights-section" id="ourhightlights-link">Our Highlights</a>
         <a href="#gallery-section" id="gallery-link">Gallery</a>
-        <a href="#amenities-sectiona" id="amenities-link">Amenities</a>
+        <a href="#amenities-section" id="amenities-link">Amenities</a>
         <a href="#location-section" id="location-link">Location</a>
         <a href="#contactUs-section" id="contact-link">Contact Us</a>
     </div>

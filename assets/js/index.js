@@ -117,6 +117,20 @@ $(document).ready(function() {
   });
 });
 
+function navigateAmenities(){
+  var target = $("#amenities-section");
+  $('html, body').animate({
+      scrollTop: target.offset().top
+  }, 300); // Adjust the duration (1000 milliseconds) as needed
+}
+
+function navigateContact(){
+  var target = $("#contactUs-section");
+  $('html, body').animate({
+      scrollTop: target.offset().top
+  }, 300); // Adjust the duration (1000 milliseconds) as needed
+}
+
 ///////////////
 // gallery pop up container//
 //////////////
