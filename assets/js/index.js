@@ -219,3 +219,14 @@ async function showParagraphs() {
 }
 
 showParagraphs();
+
+// amenities carousel
+$('#amenities-section-slider').slick({
+  slidesToShow:3, 
+  slidesToScroll: 1, 
+  autoplay: false, 
+  infinite: true,
+  centerMode: false,
+  centerPadding: '0',
+  // Add any responsive settings if needed
+});

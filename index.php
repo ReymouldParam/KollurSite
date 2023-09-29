@@ -223,22 +223,38 @@
     <section class="home-section-amenities" id="amenities-section">
         <div class="amenities-section-container">
             <h1 class="main-heading">Amenities</h1>
-            <div class="popup-container">
-                <div class="popup">
-                    <img src="assets/images/amenities/gym.jpg" alt="amenities-image">
-                    <p>GYM</p>
+            <div class="popup-container" id="amenities-section-slider">
+                <div class="writing">
+                    <div class="popup">
+                        <img src="assets/images/amenities/gym.jpg" alt="amenities-image">
+                    </div>
+                    <div class="letter">
+                        <p>GYM</p>
+                    </div>  
                 </div>
-                <div class="popup">
-                    <img src="assets/images/amenities/interior.jpg" alt="amenities-image">
-                    <p>INTERIOR</p>
+                <div class="writing">
+                    <div class="popup">
+                        <img src="assets/images/amenities/interior.jpg" alt="amenities-image">
+                    </div>
+                    <div class="letter">
+                        <p>INTERIOR</p>
+                    </div>
                 </div>
-                <div class="popup">
-                    <img src="assets/images/amenities/playarea.jpg" alt="amenities-image">
-                    <p>PLAY AREA</p>
+                <div class="writing">
+                    <div class="popup">
+                        <img src="assets/images/amenities/playarea.jpg" alt="amenities-image">
+                    </div>
+                    <div class="letter">
+                        <p>PLAY AREA</p>
+                    </div>
                 </div>
-                <div class="popup">
-                    <img src="assets/images/amenities/swimming.jpg" alt="amenities-image">
-                    <p>SWIMMING POOL</p>
+                <div class="writing">
+                    <div class="popup">
+                        <img src="assets/images/amenities/swimming.jpg" alt="amenities-image">
+                    </div>
+                    <div class="letter">
+                        <p>SWIMMING POOL</p>
+                    </div>
                 </div>
             </div>
         </div>        
