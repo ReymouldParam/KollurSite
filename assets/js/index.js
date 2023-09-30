@@ -27,7 +27,7 @@ $(document).ready(function() {
           }
         },
         {
-          breakpoint: 480,
+          breakpoint: 430,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
@@ -36,6 +36,44 @@ $(document).ready(function() {
         }
       ]
     });
+
+    
+  $('#amenities-section-slider').slick({
+    slidesToShow: 3, 
+    slidesToScroll: 1, 
+    autoplay: false, 
+  //   autoplaySpeed: 5000,
+    infinite:false,
+    centerPadding: '0',
+    focusOnSelect: false,
+    responsive: [
+      {
+        breakpoint: 1445,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          centerPadding: '0',
+        }
+      },
+      {
+        breakpoint: 770,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          centerPadding: '0',
+        }
+      },
+      {
+        breakpoint: 430,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerPadding:true
+        }
+      }
+    ]
+  });
+
 
 });
 
@@ -219,14 +257,3 @@ async function showParagraphs() {
 }
 
 showParagraphs();
-
-// amenities carousel
-$('#amenities-section-slider').slick({
-  slidesToShow:3, 
-  slidesToScroll: 1, 
-  autoplay: false, 
-  infinite: true,
-  centerMode: false,
-  centerPadding: '0',
-  // Add any responsive settings if needed
-});
