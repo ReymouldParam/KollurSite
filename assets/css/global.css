@@ -36,15 +36,22 @@ body{
 }
 
 /* header styles */
+.head-container {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+}
 
 #pageHeader{
-    position: absolute;
+    position: fixed;
     z-index: 10;
     top: 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
     padding: 5vh 5vh;
+    background-color: black;
 }
 
 .header-logo-container{

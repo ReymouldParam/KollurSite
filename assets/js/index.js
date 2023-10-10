@@ -2,18 +2,20 @@
 
 $(document).ready(function() {
     $('.gallery-carousel').slick({
-      slidesToShow: 3, 
+      slidesToShow: 1, 
       slidesToScroll: 1, 
-      autoplay: false, 
-    //   autoplaySpeed: 5000,
-      infinite:false,
+      autoplay: true, 
+      // dots: true,
+      arrows: true,
+      autoplaySpeed: 9000,
+      infinite:true,
       centerPadding: '0',
       focusOnSelect: false,
       responsive: [
         {
           breakpoint: 1445,
           settings: {
-            slidesToShow: 3,
+            slidesToShow: 1,
             slidesToScroll: 1,
             centerPadding: '0',
           }
@@ -21,7 +23,7 @@ $(document).ready(function() {
         {
           breakpoint: 770,
           settings: {
-            slidesToShow: 2,
+            slidesToShow: 1,
             slidesToScroll: 1,
             centerPadding: '0',
           }
@@ -37,13 +39,17 @@ $(document).ready(function() {
       ]
     });
 
-    
+
+// amenities carousel   
   $('#amenities-section-slider').slick({
-    slidesToShow: 3, 
+    slidesToShow: 5, 
     slidesToScroll: 1, 
-    autoplay: false, 
-  //   autoplaySpeed: 5000,
-    infinite:false,
+    autoplay: true,
+    // dots: true,
+    arrows: true,
+
+    autoplaySpeed: 9000,
+    infinite:true,
     centerPadding: '0',
     focusOnSelect: false,
     responsive: [
@@ -74,9 +80,35 @@ $(document).ready(function() {
     ]
   });
 
-
+  
+$('.center').slick({
+  centerMode: true,
+  centerPadding: '60px',
+  slidesToShow: 3,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
 });
 
+
+});
 
 // floting elements
 
@@ -257,3 +289,10 @@ async function showParagraphs() {
 }
 
 showParagraphs();
+
+$(document).ready(function() {
+  setTimeout(function() {
+    $('body').addClass('loaded');
+    $('h1').css('color','#222222');
+  }, 3000);
+});

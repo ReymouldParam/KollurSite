@@ -13,15 +13,6 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-
-<div id="loader-wrapper">
-    <div id="loader"></div>
-
-    <div class="loader-section section-left"></div>
-    <div class="loader-section section-right"></div>
-
-</div>
-
     <?php
         include 'includes/header.php';
     ?>
@@ -49,20 +40,11 @@
             <h1 class="main-heading">About Us</h1>
             <p class="aboutus-content">Luxury meets convenience in our futuristic & beautiful residences. Experience the comfort and privacy of a luxurious home, complemented by the modern amenities and hassle-free living of an upscale apartment. Indulge in elegant finishes, spacious interiors, and personalized services, creating a refined lifestyle that redefines your expectations. Welcome to a new level of future era living.</p>
         </div>
-        <!-- absolute images -->
-            <img src="assets/images/apartment-2.png" class="home-section-1-absolute-img-1" alt="apartment-image">
-            <div class="home-section-1-overlay"></div>
+    <!-- absolute images -->
+    <img src="assets/images/apartment-2.png" class="home-section-1-absolute-img-1" alt="apartment-image">
+    <div class="home-section-1-overlay"></div>
+        
     </section>
-
-    
-    <section class="video-section">
-        <div>
-            <video width="100%" height="auto" controls>
-               <source src="path/to/video.mp4" type="video/mp4">
-            </video>
-        </div>
-    </section>
-    
 
     <section class="home-section-2" id="ourHighlights-section">
         <div class="home-section-2-container">
@@ -387,3 +369,4 @@
     ?>
 </body>
 </html>
+
