@@ -1,8 +1,8 @@
 :root{
-    --theme-color1: #0a002d; /* rgba(34, 102, 141, 1) */
-    --theme-color2: #8ECDDD; /* rgba(142, 205, 221, 1) */
-    --theme-color3: #FFFADD; /* rgba(255, 250, 221, 1) */
-    --theme-color4: #e9e9e9; /* rgba(255, 204, 112, 1) */
+    --theme-color1: black; 
+    --theme-color2: #8ECDDD; 
+    --theme-color3: #FFFADD; 
+    --theme-color4: #e9e9e9; 
     --transperent-color: rgba(0, 0, 0, 0);
     --main-heading-color: #f9f6e7;
     --sub-heading-color: #f9f4db;
@@ -21,6 +21,9 @@
 
 body{
     position: relative;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
 }
 
 .main-heading{

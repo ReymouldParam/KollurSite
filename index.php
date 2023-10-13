@@ -12,7 +12,7 @@
     <!-- External CSS styles -->
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body>
+<body background="assets/images/blueprint-bg-3.jpg">
 
 <div id="loader-wrapper">
     <div id="loader"></div>
@@ -37,32 +37,31 @@
                         <button class="btn section-1-btn" onclick="navigateContact()">Contact</button>
                     </div>
                 </div>
-            </div>
-            <div class="section-1-inner-2">
-                
-            </div>
-
-            
+            </div>           
         </div>
-
-        <div class="home-section-1-aboutus" id="aboutUs-section">
-            <h1 class="main-heading">About Us</h1>
-            <p class="aboutus-content">Luxury meets convenience in our futuristic & beautiful residences. Experience the comfort and privacy of a luxurious home, complemented by the modern amenities and hassle-free living of an upscale apartment. Indulge in elegant finishes, spacious interiors, and personalized services, creating a refined lifestyle that redefines your expectations. Welcome to a new level of future era living.</p>
-        </div>
-        <!-- absolute images -->
             <img src="assets/images/apartment-2.png" class="home-section-1-absolute-img-1" alt="apartment-image">
             <div class="home-section-1-overlay"></div>
     </section>
 
     
-    <section class="video-section">
-        <div>
-            <video width="100%" height="auto" controls>
-               <source src="path/to/video.mp4" type="video/mp4">
-            </video>
+    <section class="aboutus-section">
+        <div class="aboutus-container">
+            <div class="home-section-1-aboutus" id="aboutUs-section-fadein-left">
+                <h1 class="main-heading">About Us</h1>
+                <p class="aboutus-content">Luxury meets convenience in our futuristic & beautiful residences. Experience the comfort and privacy of a luxurious home, complemented by the modern amenities and hassle-free living of an upscale apartment. Indulge in elegant finishes, spacious interiors, and personalized services, creating a refined lifestyle that redefines your expectations. Welcome to a new level of future era living.</p>
+            </div>
+            <div class=" aboutus-image-container" id="aboutus-fadein-top">
+                <img src="assets/images/blueprint-bg-2.jpg" alt="aboutus-image">
+            </div>
         </div>
     </section>
     
+    <section class="video-section">
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+
 
     <section class="home-section-2" id="ourHighlights-section">
         <div class="home-section-2-container">
@@ -188,7 +187,7 @@
         </div>
 
         <!-- absolute images -->
-        <img src="assets/images/blueprint-bg-2.png" alt="bg-image" class="home-section-2-absolute-img-1">
+        
     </section>
 
     <!--**************************-->
