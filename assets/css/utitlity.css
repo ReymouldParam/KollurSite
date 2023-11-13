@@ -1,0 +1,30 @@
+h1,h2,h3,h4,h5,h6,a{
+    text-transform: capitalize;
+}
+
+.utility-banner-heading{
+    font-family: var(--main-banner-font);
+    color: #fff;
+}
+.utility-main-heading{
+    font-family: var(--main-heading-font);
+}
+.utility-sub-heading{
+    font-family: var(--sub-heading-font);
+    color: var(--theme-color-orange);
+}
+.utility-text{
+    font-family: var(--text-font);
+    line-height: 150%;
+}
+
+.utility-section{
+    box-sizing: border-box;
+    padding: 5px 90px;
+}
+
+.utility-background-propery{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

@@ -1,0 +1,251 @@
+.banner-main-container{
+    height: 100vh;
+    background-image: url(../images/banner-bg.png);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: relative;
+}
+
+.banner-main-container > .section-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right,rgba(0,0,0,0.7),rgba(0,0,0,0) 70%);
+    top: 0;
+    right: 0;
+}
+
+.banner-main-container .banner-content-container{
+    position: relative;
+    z-index: 1;
+}
+.banner-main-container .banner-content-container .main-heading{
+    font-size: 6rem;
+}
+.banner-main-container .banner-content-container .main-heading:first-child{
+    color: var(--theme-color-blue);
+}
+.banner-main-container .banner-content-container .sub-heading{
+    color: #fff;
+    margin: 20px 0;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 2rem;
+}
+
+/* about us section styles */
+
+.section-main-container{
+    width: 100%;
+    padding: 10px 0;
+}
+
+.section-main-container .section-content-container {
+    text-align: center;
+    padding: 40px 0 10px;
+}
+
+.section-main-container .section-content-container .title-container > .main-heading{
+    margin: 20px 0;
+    font-size: 2rem;
+}
+
+.section-main-container .section-content-container .text-container > .text{
+    width: 80%;
+    margin: auto;
+}
+
+.about-us-main-container .about-us-image-container > .about-us-img{
+    width: 100%;
+}
+
+.highlights-main-container .highlights-grid-main-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+
+.highlights-main-container .highlights-grid-main-container .highlight-item .icon-container{
+    width:10vw;
+    height: 10vw;
+    border-radius: 8px;
+    border: 3px solid var(--theme-color-orange);
+    margin: auto;
+}
+.highlights-main-container .highlights-grid-main-container .highlight-item .content-container .main-heading{
+    font-family: var(--sub-heading-font);
+    font-weight: 600;
+    margin: 10px 0;
+    font-size: 1.45rem;
+    text-transform: capitalize;
+}
+.highlights-main-container .highlights-grid-main-container .highlight-item .content-container .sub-heading{
+    font-family: var(--sub-heading-font);
+    font-weight: 550;
+    margin: 10px 0;
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+
+.highlights-main-container .highlights-grid-main-container .grid-item{
+    text-align: center;
+}
+
+.gallery-carousel-main-container{
+    width: 100%;
+}
+
+.gallery-carousel-main-container .carousel-item{
+    height: 50vh;
+    text-align: center;
+    overflow: hidden;
+    margin: 20px;
+    border-radius: 20px;
+    border: 3px solid var(--theme-color-orange);
+}
+.gallery-carousel-main-container .carousel-item > .gallery-img{
+    height: 100%;
+    width: auto;
+}
+
+.gallery-main-container{
+    background-color: #fff;
+    border-top: 3px solid var(--theme-color-blue);
+    border-bottom: 3px solid var(--theme-color-blue);
+
+}
+
+.gallery-carousel-main-container .slick-prev{
+    left: 15px;
+    z-index: 1;
+}
+.gallery-carousel-main-container .slick-next{
+    right: 15px;
+    z-index: 1;
+}
+.gallery-carousel-main-container .slick-prev:before,.gallery-carousel-main-container .slick-next:before{
+    opacity: 1;
+    font-size: 2rem;
+}
+
+.gallery-carousel-main-container .slick-dots li button:before{
+    content: '';
+    width: 40px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: gray;
+}
+.gallery-carousel-main-container .slick-dots li{
+    width: 40px;
+}
+.gallery-carousel-main-container .slick-dots li.slick-active button:before{
+    background-color: var(--theme-color-orange);
+}
+
+.floor-plan-main-container{
+    background-color: #fff;
+    border-top: 3px solid var(--theme-color-blue);
+    border-bottom: 3px solid var(--theme-color-blue);
+}
+
+.floor-plan-main-container .floor-plan-image-container{
+    text-align: center;
+    height: 80vh;
+}
+.floor-plan-main-container .floor-plan-image-container .floor-plan{
+    height: 100%;
+}
+
+.floor-plan-main-container .floor-plan-details-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 20px 2%;
+    text-align: center;
+}
+
+.floor-plan-main-container .floor-plan-details-container .title-container .sub-heading{
+    font-size: 1.5rem;
+    color: #000;
+}
+
+.floor-plan-main-container .floor-plan-details-container .details-points .item i{
+    color: var(--theme-color-orange);
+    margin: 0 10px;
+}
+.floor-plan-main-container .floor-plan-details-container .details-points .item{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.testimonials-carousel-main-container{
+    width: 90%;
+    margin: auto;
+}
+.testimonials-carousel-main-container .carousel-item{
+    height: 15vw;
+    width: 15vw;
+    transform: scale(0.7);
+}
+.testimonials-carousel-main-container .slick-current{
+    transform: scale(1);
+}
+.testimonials-carousel-main-container .carousel-item > img{
+    margin: auto;
+    height: 100%;
+    width: auto;
+}
+.testimonials-carousel-main-container .slick-prev:before,.testimonials-carousel-main-container .slick-next:before{
+    color: var(--theme-color-orange);
+    font-size: 3rem;
+    opacity: 1;
+}
+.testimonials-carousel-main-container .slick-prev{
+    left: -40px;
+}
+.testimonials-carousel-main-container .slick-next{
+    right: -40px;
+}
+
+.testimonials-2-carousel-main-container{
+    width: 30%;
+    margin: 20px auto;
+}
+.testimonials-2-carousel-main-container .carousel-item{
+    text-align: center;
+}
+.testimonials-2-carousel-main-container .carousel-item .text-container > .text{
+    font-weight: 600;
+}
+.testimonials-2-carousel-main-container .carousel-item .stars-container > i{
+    margin: 20px 5px;
+    color: rgb(255, 195, 16);
+    font-size: x-large;
+}
+.testimonials-2-carousel-main-container .carousel-item .stars-container > .opacity-light{
+    opacity: 0.4;
+}
+
+.testimonials-2-carousel-main-container .carousel-item .name-container .main-heading{
+    font-size: 2rem;
+}
+.testimonials-2-carousel-main-container .carousel-item .name-container .sub-heading{
+    font-size: 1rem;
+    font-weight: 400;
+}
+.testimonials-2-carousel-main-container .slick-dots li button:before{
+    content: '';
+    width: 40px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: gray;
+}
+.testimonials-2-carousel-main-container .slick-dots li{
+    width: 40px;
+}
+.testimonials-2-carousel-main-container .slick-dots li.slick-active button:before{
+    background-color: var(--theme-color-orange);
+}
+
