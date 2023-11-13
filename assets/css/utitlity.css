@@ -38,3 +38,14 @@ Tablet responsive media tags
         padding: 5px 30px;
     }
 }
+
+
+/* *****************
+mobile responsive media quries
+**************** */
+
+@media screen and (max-width:550px) {
+    .utility-section{
+        padding: 5px 20px;
+    }
+}

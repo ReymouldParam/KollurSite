@@ -292,3 +292,95 @@
         padding: 15px;
     }
 }
+
+
+
+/* *****************
+mobile responsive media quries
+**************** */
+
+@media screen and (max-width:550px) {
+    .banner-main-container .banner-content-container .main-heading{
+        font-size: 3rem;
+    }
+    .banner-main-container .banner-content-container .sub-heading{
+        font-size: 1.4rem;
+        letter-spacing: 0;
+    }
+    .floor-plan-main-container .floor-plan-image-container{
+        height: 40vh;
+    }
+    .header-main-container .header-inner-container .logo-main-container{
+        width: 40%;
+    }
+    .contact-main-container-2 >.grid-section{
+        grid-template-columns: auto;
+        grid-gap:20px;
+        padding: 20px 0;
+    }
+    .contact-main-container-2 >.grid-section > .logo-container >img{
+        width: 60%;
+    }
+    .testimonials-carousel-main-container .slick-prev:before, .testimonials-carousel-main-container .slick-next:before{
+        font-size: 2rem;
+    }
+    .contact-main-container-2 >.grid-section .contact-us-details>.inner-grid-section{
+        grid-template-columns: auto;
+        grid-gap:10px;
+    }
+    .page-footer-main-container .page-footer-inner-container .copyright-container{
+        margin: 0 20px;
+        padding: 10px 0;
+    }
+    .page-footer-main-container .page-footer-inner-container .copyright-container >.text{
+        font-size: 0.8rem;
+    }
+    .section-main-container .section-content-container .title-container > .main-heading{
+        margin: 10px 0;
+        font-size: 1.6rem;
+    }
+    .section-main-container .section-content-container .text-container > .text{
+        width: 95%;
+    }
+    .highlights-main-container .highlights-grid-main-container{
+        grid-template-columns: auto auto;
+    }
+    .highlights-main-container .highlights-grid-main-container .highlight-item .icon-container{
+        height: 30vw;
+        width: 30vw;
+    }
+    .gallery-carousel-main-container .carousel-item{
+        margin: 5px;
+    }
+    .floor-plan-main-container .floor-plan-details-container .title-container .sub-heading{
+        font-size: 1rem;
+    }
+    .floor-plan-main-container .floor-plan-details-container .details-points .item{
+        font-size: 0.8rem;
+        justify-content: flex-start;
+    }
+    .testimonials-carousel-main-container .carousel-item{
+        transform: scale(0.7);
+        height: 28vw;
+    }
+    .testimonials-carousel-main-container .slick-current{
+        transform: scale(1);
+    }
+    .testimonials-2-carousel-main-container{
+        width: 85%;
+    }
+    .page-footer-main-container .page-footer-inner-container .contact-main-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .page-footer-main-container .page-footer-inner-container .contact-main-container>div{
+        width: 100%;
+        margin: 10px 0;
+    }
+    .page-footer-main-container .page-footer-inner-container .contact-main-container > .map-container{
+        height: 40vh;
+    }
+    .page-footer-main-container{
+        background-size: auto 80%;
+    }
+}
