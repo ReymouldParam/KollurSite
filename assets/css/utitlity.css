@@ -28,3 +28,13 @@ h1,h2,h3,h4,h5,h6,a{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+/* ***************
+Tablet responsive media tags
+*************** */
+
+@media screen and (max-width:900px) {
+    .utility-section{
+        padding: 5px 30px;
+    }
+}

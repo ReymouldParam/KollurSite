@@ -97,6 +97,9 @@ body{
     border-color: var(--transperent);
     box-shadow: 0 0 10px white;
 }
+.toggle-menu-main-container,.header-main-container .menu-button-container{
+    display: none;
+}
 
 /* footer styles */
 .page-footer-main-container{
@@ -216,4 +219,47 @@ body{
     color: white;
     font-weight: 100;
     text-decoration: none;
+}
+
+/* *****************
+Tablet responsive media quries
+**************** */
+
+@media screen and (max-width:900px) {
+    .header-main-container .header-inner-container .navbar-main-container,.header-main-container .header-inner-container .contact-us-main-container .contact-us-btn{
+        display: none;
+    }
+
+    .header-main-container .menu-button-container > .menu-btn{
+        color: white;
+        font-size: larger;
+    }
+    .header-main-container .menu-button-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .header-main-container .header-inner-container .logo-main-container{
+        width: 25%;
+    }
+
+    .toggle-menu-main-container{
+        width: 100%;
+        display: block;
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.5s linear;
+    }
+    .toggle-menu-main-container .menu-item{
+        width: 100%;
+        padding: 15px;
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.408);
+    }
+    .toggle-menu-main-container .menu-item > .nav-link{
+        text-decoration: none;
+        color: white;
+        font-size: 1.2rem;
+        font-family: var(--text-font);
+    }
 }

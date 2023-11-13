@@ -33,3 +33,14 @@ $(".testimonials-2-carousel-main-container").slick({
     asNavFor:'.testimonials-carousel-main-container',
     fade:true
 });
+var navMenuVisible=false;
+function toggleNavMenu() {
+    var $menuContainer = $('.toggle-menu-main-container');
+    if (navMenuVisible) {
+        $menuContainer.css("max-height", "0");
+        navMenuVisible = false;
+    } else {
+        $menuContainer.css("max-height", $menuContainer[0].scrollHeight + "px");
+        navMenuVisible = true;
+    }
+}

@@ -206,7 +206,11 @@
     left: -40px;
 }
 .testimonials-carousel-main-container .slick-next{
-    right: -40px;
+    right: -20px;
+}
+
+.testimonials-carousel-main-container .slick-prev,.testimonials-carousel-main-container .slick-next{
+    top:43%;
 }
 
 .testimonials-2-carousel-main-container{
@@ -249,3 +253,42 @@
     background-color: var(--theme-color-orange);
 }
 
+@media screen and (max-width:900px) {
+    .banner-main-container .banner-content-container .main-heading{
+        font-size: 5rem;
+    }
+
+    .highlights-main-container .highlights-grid-main-container .highlight-item .icon-container{
+        height: 14vw;
+        width: 14vw;
+    }
+    .highlights-main-container .highlights-grid-main-container .highlight-item .content-container .main-heading{
+        font-size: 1.2rem;
+    }
+    .highlights-main-container .highlights-grid-main-container .highlight-item .content-container .sub-heading{
+        font-size: 0.8rem;
+    }
+    .testimonials-carousel-main-container{
+        width: 80%;
+    }
+    .testimonials-carousel-main-container .carousel-item{
+        height: 22vw;
+    }
+    .testimonials-2-carousel-main-container{
+        width: 60%;
+    }
+    .testimonials-carousel-main-container .slick-prev{
+        left: -40px;
+    }
+    .page-footer-main-container .page-footer-inner-container .contact-main-container > .contact-form > form .form-input-container{
+        grid-template-columns: 49% 49%;
+        grid-row-gap: 6%;
+        grid-column-gap: 2%;
+    }
+    .page-footer-main-container .page-footer-inner-container .contact-main-container>div{
+        width: 48%;
+    }
+    .page-footer-main-container .page-footer-inner-container .contact-main-container > .contact-form > form{
+        padding: 15px;
+    }
+}
