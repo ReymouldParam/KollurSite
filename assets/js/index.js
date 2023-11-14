@@ -52,6 +52,8 @@ $(".testimonials-2-carousel-main-container").slick({
     asNavFor:'.testimonials-carousel-main-container',
     fade:true
 });
+
+// mobile navbar visiblity
 var navMenuVisible=false;
 function toggleNavMenu() {
     var $menuContainer = $('.toggle-menu-main-container');
@@ -63,3 +65,31 @@ function toggleNavMenu() {
         navMenuVisible = true;
     }
 }
+
+//////////////////////
+// smooth section scroll navigation
+/////////////////////
+
+$(document).ready(function() {
+  
+  function scrollToSection(targetId, offsetFraction) {
+    var target = $("#" + targetId + "-section");
+    var windowHeight = $(window).height();
+    var targetTop = target.offset().top;
+    var scrollTo = targetTop - (windowHeight * offsetFraction);
+
+    $('html, body').animate({
+      scrollTop: scrollTo
+    }, 300);
+  }
+
+
+  $("#aboutus-link, #highlights-link, #gallery-link, #amenities-link, #contact-link").click(function(e) {
+    e.preventDefault();
+    var targetId = $(this).attr("id").replace("-link", "");
+    scrollToSection(targetId, 1/8); 
+    $('.toggle-menu-main-container').css("max-height", "0");
+    navMenuVisible = false;
+  });
+});
+
