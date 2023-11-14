@@ -113,6 +113,7 @@ body{
 .page-footer-main-container .page-footer-inner-container .contact-main-container{
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
 }
 .page-footer-main-container .page-footer-inner-container .contact-main-container>div{
     width: 45%;
@@ -155,7 +156,7 @@ body{
 .page-footer-main-container .page-footer-inner-container .contact-main-container > .contact-form > form .button-container > .submit-btn{
     width: 100%;
     padding: 10px;
-    border: 0;
+    border: 1px solid var(--transperent);
     background-color: var(--theme-color-orange);
     font-family: var(--main-heading-font);
     color: white;

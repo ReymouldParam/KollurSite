@@ -93,3 +93,66 @@ $(document).ready(function() {
   });
 });
 
+
+//////////////////////////////
+// Animations on scroll 
+////////////////////////////
+
+// Animation 1
+const observeSlideUp = new IntersectionObserver((entries) => {
+  entries.forEach((entry)=> {
+    if(entry.isIntersecting){
+      entry.target.classList.add('slideUpAnim');
+    }else{
+      entry.target.classList.remove('slideUpAnim');
+    }
+  });
+});
+
+const slideUpSections = document.querySelectorAll(".slideUpAnimDefault");
+slideUpSections.forEach((ele) => observeSlideUp.observe(ele));
+
+const slideUpSections2 = document.querySelectorAll(".slideUpHalfAnimDefault");
+slideUpSections2.forEach((ele) => observeSlideUp.observe(ele));
+
+// Animation 2
+const observeZoomIn = new IntersectionObserver((entries) => {
+  entries.forEach((entry)=> {
+    if(entry.isIntersecting){
+      entry.target.classList.add('zoomInAnim');
+    }else{
+      entry.target.classList.remove('zoomInAnim');
+    }
+  });
+});
+
+const zoomInSections = document.querySelectorAll(".zoomInAnimDefault");
+zoomInSections.forEach((ele) => observeZoomIn.observe(ele));
+
+// Animation 3
+const observeSlideInLeft = new IntersectionObserver((entries) => {
+  entries.forEach((entry)=> {
+    if(entry.isIntersecting){
+      entry.target.classList.add('slideInLeftAnim');
+    }else{
+      entry.target.classList.remove('slideInLeftAnim');
+    }
+  });
+});
+
+const slideInLeftSections = document.querySelectorAll(".slideInLeftAnimDefault");
+slideInLeftSections.forEach((ele) => observeSlideInLeft.observe(ele));
+
+// Animation 4
+const observeSlideInRight = new IntersectionObserver((entries) => {
+  entries.forEach((entry)=> {
+    if(entry.isIntersecting){
+      entry.target.classList.add('slideInRightAnim');
+    }else{
+      entry.target.classList.remove('slideInRightAnim');
+    }
+  });
+});
+
+const slideInRightSections = document.querySelectorAll(".slideInRightAnimDefault");
+slideInRightSections.forEach((ele) => observeSlideInRight.observe(ele));

@@ -1,0 +1,45 @@
+:root{
+    --transition-value: all 1s ;
+}
+
+.slideUpAnimDefault{
+    transform: translateY(+100%);
+    transition: var(--transition-value);
+}
+
+.slideUpHalfAnimDefault{
+    transform: translateY(+50%);
+    transition: var(--transition-value);
+}
+
+.slideUpAnim{
+    transform: translateY(0);
+}
+
+.zoomInAnimDefault{
+    transform: scale(0);
+    opacity: 0;
+    transition: var(--transition-value);
+}
+.zoomInAnim{
+    transform: scale(1);
+    opacity: 1;
+}
+
+.slideInLeftAnimDefault{
+    transform: translateX(-100%);
+    transition: var(--transition-value);
+    transition-delay: 0.2s;
+}
+.slideInLeftAnim{
+    transform: translateX(0);
+}
+
+.slideInRightAnimDefault{
+    transform: translateX(+100%);
+    transition: var(--transition-value);
+    transition-delay: 0.2s;
+}
+.slideInRightAnim{
+    transform: translateX(0);
+}
