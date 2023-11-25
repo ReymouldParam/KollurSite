@@ -28,6 +28,19 @@ $(".gallery-carousel-main-container").slick({
       ]
 });
 
+$(".floor-plan-image-container").slick({
+  slidesToShow: 1, 
+  slidesToScroll: 1,
+  autoplay: true, 
+  autoplaySpeed: 3000,
+  centerMode:true,
+  centerPadding: '0',
+  dots: false,
+  arrows:false,
+  fade:true,
+  focusOnHover:false
+});
+
 $(".testimonials-carousel-main-container").slick({
     slidesToShow: 3, 
     slidesToScroll: 1,
@@ -52,6 +65,7 @@ $(".testimonials-2-carousel-main-container").slick({
     asNavFor:'.testimonials-carousel-main-container',
     fade:true
 });
+
 
 // mobile navbar visiblity
 var navMenuVisible=false;
@@ -120,9 +134,10 @@ const observeZoomIn = new IntersectionObserver((entries) => {
   entries.forEach((entry)=> {
     if(entry.isIntersecting){
       entry.target.classList.add('zoomInAnim');
-    }else{
-      entry.target.classList.remove('zoomInAnim');
     }
+    // else{
+    //   entry.target.classList.remove('zoomInAnim');
+    // }
   });
 });
 

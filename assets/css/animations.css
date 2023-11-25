@@ -43,3 +43,15 @@
 .slideInRightAnim{
     transform: translateX(0);
 }
+
+.slowZoomInAnimation{
+    animation: zoomInElement 10s linear;
+}
+@keyframes zoomInElement {
+    0%{
+        scale: 0.9;
+    }
+    100%{
+        scale: 1;
+    }
+}

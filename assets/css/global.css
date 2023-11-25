@@ -28,14 +28,24 @@
     --main-heading-font: 'Objectivity-bold',sans-serif;
     --sub-heading-font: 'Objectivity-medium',sans-serif;
     --text-font: 'Objectivity-light',sans-serif;
-    --theme-color-orange:#FF8025;
-    --theme-color-blue:#0077CC;
+    --theme-color-orange:#cc5500;
+    --theme-color-blue:#0077cc;
+    --theme-color-gray:#424242;
     --transperent:rgba(0,0,0,0);
 }
 
 body{
     background-image: url(../images/body-bg-2.png);
     background-position: top;
+}
+
+.floating-whatsapp-icon{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: #25D366;
+    z-index: 10;
+    font-size: 50px;
 }
 
 /* Header styles */
@@ -57,7 +67,7 @@ body{
 }
 
 .header-main-container .header-inner-container .logo-main-container{
-    width: 15%;
+    width: 20%;
     height: auto;
 }
 .header-main-container .header-inner-container .logo-main-container > .logo{
@@ -72,6 +82,12 @@ body{
 
 .header-main-container .header-inner-container .navbar-main-container .nav-item{
     margin: 0 1.2rem;
+}
+
+.header-main-container .header-inner-container .navbar-main-container .nav-item .sm-icon-container i{
+    color: white;
+    margin: 0 5px;
+    text-decoration: none;
 }
 
 .header-main-container .header-inner-container .navbar-main-container .nav-item > a{
