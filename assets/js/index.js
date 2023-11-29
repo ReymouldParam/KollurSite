@@ -101,7 +101,7 @@ $(document).ready(function() {
   $("#aboutus-link, #highlights-link, #gallery-link, #amenities-link, #contact-link").click(function(e) {
     e.preventDefault();
     var targetId = $(this).attr("id").replace("-link", "");
-    scrollToSection(targetId, 1/8); 
+    scrollToSection(targetId, 1/100); 
     $('.toggle-menu-main-container').css("max-height", "0");
     navMenuVisible = false;
   });
@@ -112,7 +112,7 @@ $(document).ready(function() {
 // Animations on scroll 
 ////////////////////////////
 
-// Animation 1
+// Animation 1 slide up animations
 const observeSlideUp = new IntersectionObserver((entries) => {
   entries.forEach((entry)=> {
     if(entry.isIntersecting){
@@ -129,22 +129,22 @@ slideUpSections.forEach((ele) => observeSlideUp.observe(ele));
 const slideUpSections2 = document.querySelectorAll(".slideUpHalfAnimDefault");
 slideUpSections2.forEach((ele) => observeSlideUp.observe(ele));
 
-// Animation 2
+// Animation 2 zoom in from scale 0 -> 1 animation
 const observeZoomIn = new IntersectionObserver((entries) => {
   entries.forEach((entry)=> {
     if(entry.isIntersecting){
       entry.target.classList.add('zoomInAnim');
     }
-    // else{
-    //   entry.target.classList.remove('zoomInAnim');
-    // }
+    else{
+      entry.target.classList.remove('zoomInAnim');
+    }
   });
 });
 
 const zoomInSections = document.querySelectorAll(".zoomInAnimDefault");
 zoomInSections.forEach((ele) => observeZoomIn.observe(ele));
-
-// Animation 3
+ 
+// Animation 3 slide in left animation
 const observeSlideInLeft = new IntersectionObserver((entries) => {
   entries.forEach((entry)=> {
     if(entry.isIntersecting){
@@ -158,7 +158,7 @@ const observeSlideInLeft = new IntersectionObserver((entries) => {
 const slideInLeftSections = document.querySelectorAll(".slideInLeftAnimDefault");
 slideInLeftSections.forEach((ele) => observeSlideInLeft.observe(ele));
 
-// Animation 4
+// Animation 4 slide in right animation
 const observeSlideInRight = new IntersectionObserver((entries) => {
   entries.forEach((entry)=> {
     if(entry.isIntersecting){

@@ -1,3 +1,17 @@
+<!--
+
+                ******* INSTRUCTIONS  ********
+    
+    -> font awwsome icons used in website "https://fontawesome.com/"
+    -> Slick carousel library is imported ans used for creating carousel in website "https://kenwheeler.github.io/slick/"
+    -> All resources are valiable in assets directory
+       -> Common styles like header and footer are present in global.css file
+    -> Jquery is imported as a CDN
+    -> Use images in .webp format for better perfoamance
+    
+
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,6 +25,9 @@
     <!-- slick carousel -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"/>
+
+    <!-- favicon -->
+    <link rel="icon" href="assets/images/favicon.png">
 
     <!-- font awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -45,10 +62,10 @@
                     <a href="" id="highlights-link">Highlights</a>
                 </div>
                 <div class="nav-item">
-                    <a href="" id="amenities-link">Amenities</a>
+                    <a href="" id="gallery-link">Gallery</a>
                 </div>
                 <div class="nav-item">
-                    <a href="" id="gallery-link">Gallery</a>
+                    <a href="" id="amenities-link">Amenities</a>
                 </div>
                 <div class="nav-item">
                     <div class="sm-icon-container">
@@ -131,8 +148,178 @@
             </div>
         </div>
 
-        <div class="about-us-image-container slowZoomInAnimation">
+        <div class="about-us-image-container zoomInAnimDefault">
             <img src="assets/images/about-us.webp" alt="" class="about-us-img">
+        </div>
+    </section>
+
+    <!-- proximity section -->
+    <section class="proximity-main-container section-main-container utility-background-propery">
+        <div class="about-us-content-container utility-section section-content-container">
+            <div class="title-container">
+                <h2 class="sub-heading utility-sub-heading">Proximity</h2>
+                <h1 class="main-heading utility-main-heading">Your Trusted Partner in Exceptional Apartment</h1>
+            </div>
+            <!-- <div class="text-container">
+                <p class="text utility-text">At Gruhalaya, we bring your vision to life. With a commitment to quality craftsmanship, attention to detail, and a passion for construction, we are your trusted partner in building the future.Enjoy the comfort and privacy of luxury living with amenities in an upscale apartment.</p>
+            </div> -->
+        </div>
+
+        <div class="proximity-grid-container utility-section">
+            <div class="proximity-item-container">
+                <div class="icon-container">
+                    <i class="fa-solid fa-school"></i>
+                </div>
+                <div class="content-container">
+                    <h1 class="main-heading utility-main-heading">Schools</h1>
+                    <h2 class="sub-heading utility-main-heading">2 km</h2>
+                </div>
+                <!-- overlay content -->
+                <div class="proximity-overlay-container">
+                    <h1 class="main-heading">Near By schools</h1>
+                    <ul>
+                        <li>school 1</li>
+                        <li>School 2</li>
+                        <li>School 3</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="proximity-item-container">
+                <div class="icon-container">
+                    <i class="fa-solid fa-school"></i>
+                </div>
+                <div class="content-container">
+                    <h1 class="main-heading utility-main-heading"> Shopping Malls</h1>
+                    <h2 class="sub-heading utility-main-heading">2 km</h2>
+                </div>
+                <!-- overlay content -->
+                <div class="proximity-overlay-container">
+                    <h1 class="main-heading">Near By schools</h1>
+                    <ul>
+                        <li>school 1</li>
+                        <li>School 2</li>
+                        <li>School 3</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="proximity-item-container">
+                <div class="icon-container">
+                    <i class="fa-solid fa-school"></i>
+                </div>
+                <div class="content-container">
+                    <h1 class="main-heading utility-main-heading">Schools</h1>
+                    <h2 class="sub-heading utility-main-heading">2 km</h2>
+                </div>
+                <!-- overlay content -->
+                <div class="proximity-overlay-container">
+                    <h1 class="main-heading">Near By schools</h1>
+                    <ul>
+                        <li>school 1</li>
+                        <li>School 2</li>
+                        <li>School 3</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="proximity-item-container">
+                <div class="icon-container">
+                    <i class="fa-solid fa-school"></i>
+                </div>
+                <div class="content-container">
+                    <h1 class="main-heading utility-main-heading">Schools</h1>
+                    <h2 class="sub-heading utility-main-heading">2 km</h2>
+                </div>
+                <!-- overlay content -->
+                <div class="proximity-overlay-container">
+                    <h1 class="main-heading">Near By schools</h1>
+                    <ul>
+                        <li>school 1</li>
+                        <li>School 2</li>
+                        <li>School 3</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="proximity-item-container">
+                <div class="icon-container">
+                    <i class="fa-solid fa-school"></i>
+                </div>
+                <div class="content-container">
+                    <h1 class="main-heading utility-main-heading">Schools</h1>
+                    <h2 class="sub-heading utility-main-heading">2 km</h2>
+                </div>
+
+                <!-- overlay content -->
+                <div class="proximity-overlay-container">
+                    <h1 class="main-heading">Near By schools</h1>
+                    <ul>
+                        <li>school 1</li>
+                        <li>School 2</li>
+                        <li>School 3</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="proximity-item-container">
+                <div class="icon-container">
+                    <i class="fa-solid fa-school"></i>
+                </div>
+                <div class="content-container">
+                    <h1 class="main-heading utility-main-heading">Railway Station</h1>
+                    <h2 class="sub-heading utility-main-heading">2 km</h2>
+                </div>
+                <!-- overlay content -->
+                <div class="proximity-overlay-container">
+                    <h1 class="main-heading">Near By schools</h1>
+                    <ul>
+                        <li>school 1</li>
+                        <li>School 2</li>
+                        <li>School 3</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="proximity-item-container">
+                <div class="icon-container">
+                    <i class="fa-solid fa-school"></i>
+                </div>
+                <div class="content-container">
+                    <h1 class="main-heading utility-main-heading">Railway Station</h1>
+                    <h2 class="sub-heading utility-main-heading">2 km</h2>
+                </div>
+                <!-- overlay content -->
+                <div class="proximity-overlay-container">
+                    <h1 class="main-heading">Near By schools</h1>
+                    <ul>
+                        <li>school 1</li>
+                        <li>School 2</li>
+                        <li>School 3</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="proximity-item-container">
+                <div class="icon-container">
+                    <i class="fa-solid fa-school"></i>
+                </div>
+                <div class="content-container">
+                    <h1 class="main-heading utility-main-heading">Railway Station</h1>
+                    <h2 class="sub-heading utility-main-heading">2 km</h2>
+                </div>
+                <!-- overlay content -->
+                <div class="proximity-overlay-container">
+                    <h1 class="main-heading">Near By schools</h1>
+                    <ul>
+                        <li>school 1</li>
+                        <li>School 2</li>
+                        <li>School 3</li>
+                    </ul>
+                </div>
+            </div>
+
+            
         </div>
     </section>
 
@@ -641,7 +828,7 @@
             <div class="contact-main-container-2 utility-section">
                 <div class="grid-section">
                     <div class="logo-container">
-                        <img src="assets/images/logo.png" alt="logo" class="logo">
+                        <img src="assets/images/logo-white.png" alt="logo" class="logo">
                     </div>
                     <div class="contact-us-details">
                         <h5 class="main-heading utility-main-heading">Contact us</h5>

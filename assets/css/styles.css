@@ -123,6 +123,7 @@
 .section-main-container .section-content-container {
     text-align: center;
     padding: 40px 0 10px;
+    position: relative;
 }
 
 .section-main-container .section-content-container .title-container > .main-heading{
@@ -140,12 +141,120 @@
 }
 
 .about-us-main-container .about-us-image-container > .about-us-img{
-    width: 85%;
+    width: auto;
+    height: 70vh;
     box-sizing: border-box;
     /* box-shadow: 0 0 25px var(--theme-color-orange);
     border: 10px solid var(--theme-color-orange);
     border-radius: 100px; */
 }
+
+.proximity-main-container {
+    position: relative; /* Make sure the container is positioned relative so that the absolute positioning of :before is relative to it */
+    background-color: #fff;
+    border-top: 3px solid var(--theme-color-blue);
+    border-bottom: 3px solid var(--theme-color-blue);
+    background-image: url(../images/proximity-bg.png);
+
+}
+
+.proximity-main-container:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.326); /* Adjust the last value (0.5) for the desired level of transparency */
+    z-index: 0; /* Make sure the overlay is behind the content */
+}
+
+
+.proximity-main-container .proximity-grid-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 30px;
+}
+
+.proximity-main-container .proximity-grid-container .proximity-item-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:#0077ccd9;
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+    height: 20vh;
+}
+
+.proximity-main-container .proximity-grid-container .proximity-item-container > .icon-container{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.proximity-main-container .proximity-grid-container .proximity-item-container > .icon-container > i{
+    font-size: 4rem;
+    color: white;
+}
+
+.proximity-main-container .proximity-grid-container .proximity-item-container > .content-container{
+    text-align: center;
+}
+
+.proximity-main-container .proximity-grid-container .proximity-item-container > .content-container .main-heading{
+    color: var(--theme-color-orange);
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.851);
+    margin-bottom: 8px;
+    font-size: 1.6rem;
+}
+
+.proximity-main-container .proximity-grid-container .proximity-item-container > .content-container .sub-heading{
+    color: white;
+}
+
+.proximity-main-container .proximity-grid-container .proximity-item-container > .proximity-overlay-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    opacity: 0;
+    transform: translateY(-30px) scale(0);
+    transition: all 0.3s linear;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+
+.proximity-main-container .proximity-grid-container .proximity-item-container > .proximity-overlay-container::-webkit-scrollbar {
+    display: none;
+}
+
+.proximity-main-container .proximity-grid-container .proximity-item-container:hover > .proximity-overlay-container{
+    opacity: 1;
+    background-color: var(--theme-color-orange);
+    transform: translateY(0) scale(1);
+}
+
+.proximity-main-container .proximity-grid-container .proximity-item-container > .proximity-overlay-container .main-heading{
+    color: white;
+    font-family: var(--main-heading-font);
+    margin-bottom: 20px;
+}
+.proximity-main-container .proximity-grid-container .proximity-item-container > .proximity-overlay-container ul{
+    list-style: none;
+}
+.proximity-main-container .proximity-grid-container .proximity-item-container > .proximity-overlay-container ul> li{
+    color: white;
+    font-family: var(--sub-heading-font);
+    margin: 5px 0;
+}
+
 
 .highlights-main-container .highlights-grid-main-container{
     display: grid;
@@ -352,6 +461,34 @@
     background-color: var(--theme-color-orange);
 }
 
+/* responsive style for laptop screen less than 1200px width */
+
+@media screen and (max-width:1200px){
+    .proximity-main-container .proximity-grid-container .proximity-item-container > .icon-container > i {
+        font-size: 3rem;
+        color: white;
+    }
+    .proximity-main-container .proximity-grid-container .proximity-item-container > .content-container .main-heading {
+        font-size: 1.3rem;
+    }
+    .proximity-main-container .proximity-grid-container .proximity-item-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #0077ccd9;
+        border-radius: 20px;
+        padding: 8px;
+        position: relative;
+        height: 17vh;
+    }
+    .proximity-main-container .proximity-grid-container .proximity-item-container > .icon-container{
+        width: 70%;
+    }
+    
+}
+
+/* responsive styles for tablet */
+
 @media screen and (max-width:900px) {
     .banner-main-container > .chat-with-us-btn{
         font-size: 12px;
@@ -394,6 +531,17 @@
     .page-footer-main-container .page-footer-inner-container .contact-main-container > .contact-form > form{
         padding: 15px;
     }
+
+    .proximity-main-container .proximity-grid-container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .proximity-main-container .proximity-grid-container .proximity-item-container > .proximity-overlay-container{
+        padding: 15px;
+    }
+    .proximity-main-container .proximity-grid-container .proximity-item-container > .proximity-overlay-container .main-heading{
+        margin-bottom: 10px;
+        font-size: 1.2rem;
+    }
 }
 
 
@@ -428,6 +576,32 @@ mobile responsive media quries
     .header-main-container .header-inner-container .logo-main-container{
         width: 40%;
     }
+
+    .proximity-main-container .proximity-grid-container .proximity-item-container{
+        flex-direction: column;
+    }
+    .proximity-main-container .proximity-grid-container .proximity-item-container > .icon-container > i{
+        margin: 10px 0;
+        font-size: 2rem;
+    }
+    .proximity-main-container .proximity-grid-container .proximity-item-container > .content-container .sub-heading{
+        font-size: 1rem
+    }
+
+    .proximity-main-container .proximity-grid-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .proximity-main-container .proximity-grid-container .proximity-item-container > .proximity-overlay-container{
+        padding: 10px;
+    }
+    .proximity-main-container .proximity-grid-container .proximity-item-container > .proximity-overlay-container .main-heading{
+        margin-bottom: 10px;
+        font-size: 1rem;
+    }
+    .proximity-main-container .proximity-grid-container .proximity-item-container > .proximity-overlay-container ul> li{
+        font-size: 0.8rem
+    }
+
     .contact-main-container-2 >.grid-section{
         grid-template-columns: auto;
         grid-gap:20px;
@@ -506,4 +680,5 @@ mobile responsive media quries
     .page-footer-main-container{
         background-size: auto 80%;
     }
+
 }
