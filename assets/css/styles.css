@@ -32,10 +32,17 @@
     transition: all 0.5s;
     rotate: 270deg;
 }
+.banner-main-container > .chat-with-us-btn > a{
+    color: white;
+    text-decoration: none;
+}
 .banner-main-container > .chat-with-us-btn:hover{
     color: var(--theme-color-orange);
     background-color: var(--transperent);
     border: 1px solid var(--theme-color-orange);
+}
+.banner-main-container > .chat-with-us-btn:hover > a{
+    color: var(--theme-color-orange);
 }
 
 .banner-main-container > .banner-contact-container{
@@ -141,12 +148,28 @@
 }
 
 .about-us-main-container .about-us-image-container > .about-us-img{
-    width: auto;
-    height: 70vh;
+    width: 100%;
+    height: auto;
     box-sizing: border-box;
     /* box-shadow: 0 0 25px var(--theme-color-orange);
     border: 10px solid var(--theme-color-orange);
     border-radius: 100px; */
+}
+
+.about-us-main-container .flex-main-container{
+    display: grid;
+    grid-template-columns: auto 55%;
+    column-gap: 10px;
+    padding: 0 50px;
+}
+.about-us-main-container .flex-main-container .text-container{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.about-us-main-container .flex-main-container .text-container .text{
+    margin-bottom: 20px;
 }
 
 .proximity-main-container {
@@ -165,7 +188,7 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba(255, 255, 255, 0.326); /* Adjust the last value (0.5) for the desired level of transparency */
+    background-color: rgba(255, 255, 255, 0.7); /* Adjust the last value (0.5) for the desired level of transparency */
     z-index: 0; /* Make sure the overlay is behind the content */
 }
 
@@ -206,9 +229,12 @@
 
 .proximity-main-container .proximity-grid-container .proximity-item-container > .content-container .main-heading{
     color: var(--theme-color-orange);
-    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.851);
+    -webkit-text-stroke: #fff;
+    -webkit-text-stroke-width: 0.3px;
+    /* text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.851); */
+    text-shadow: 0;
     margin-bottom: 8px;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
 }
 
 .proximity-main-container .proximity-grid-container .proximity-item-container > .content-container .sub-heading{
@@ -228,7 +254,7 @@
     text-align: center;
     padding: 20px;
     box-sizing: border-box;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .proximity-main-container .proximity-grid-container .proximity-item-container > .proximity-overlay-container::-webkit-scrollbar {
@@ -265,7 +291,7 @@
     width:10vw;
     height: 10vw;
     border-radius: 8px;
-    border: 3px solid var(--theme-color-orange);
+    border: 3px solid var(--theme-color-blue);
     margin: auto;
     display: flex;
     justify-content: center;
@@ -353,20 +379,29 @@
     border-bottom: 3px solid var(--theme-color-blue);
 }
 
+.floor-plan-main-container .flex-main-container{
+    display: grid;
+    grid-template-columns: 50% auto;
+    margin: 10px 0;
+}
+
 .floor-plan-main-container .floor-plan-image-container{
     text-align: center;
+    height: 100%;
+    display: flex;
+    align-items: center
 }
 .floor-plan-main-container .floor-plan-image-container .carousel-item{
     height: 100%;
 }
 .floor-plan-main-container .floor-plan-image-container .carousel-item > .floor-plan{
-    height: 70vh;
+    height: 60vh;
     margin: auto;
 }
 
 .floor-plan-main-container .floor-plan-details-container{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto;
     padding: 20px 2%;
     text-align: center;
 }
@@ -374,6 +409,7 @@
 .floor-plan-main-container .floor-plan-details-container .title-container .sub-heading{
     font-size: 1.5rem;
     color: #000;
+    text-align: left;
 }
 
 .floor-plan-main-container .floor-plan-details-container .details-points .item i{
@@ -382,7 +418,7 @@
 }
 .floor-plan-main-container .floor-plan-details-container .details-points .item{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     margin: 10px 0;
     font-size: 1.2rem;
     font-weight: 600;
@@ -404,6 +440,7 @@
     margin: auto;
     height: 100%;
     width: auto;
+    border-radius: 50%;
 }
 .testimonials-carousel-main-container .slick-prev:before,.testimonials-carousel-main-container .slick-next:before{
     color: var(--theme-color-orange);
