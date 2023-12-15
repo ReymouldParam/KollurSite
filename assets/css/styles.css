@@ -5,6 +5,7 @@
     justify-content: left;
     align-items: center;
     position: relative;
+    overflow: hidden;
 }
 
 .banner-main-container > .section-overlay{
@@ -185,6 +186,9 @@
     bottom: 0;
     left: 20px;
     margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .about-us-image-container .image:nth-child(1){
@@ -787,11 +791,28 @@ mobile responsive media quries
         font-size: 1.4rem;
         letter-spacing: 0;
     }
+    .banner-main-container > .banner-contact-container{
+        bottom: 15%;
+    }
     .banner-main-container > .chat-with-us-btn{
         top: 20%;
     }
+    .banner-main-container .shooting-star-container{
+        height: 25%;
+        overflow: visible;
+    }
     .about-us-main-container .about-us-image-container > .about-us-img{
         width: 95%;
+    }
+    .about-us-main-container .flex-main-container{
+        grid-template-columns: auto;
+        padding: 0 20px;
+    }
+    .about-us-main-container .about-us-image-container{
+        height: 35vh;
+    }
+    .about-us-main-container .flex-main-container .text-container .text{
+        text-align: justify;
     }
     .banner-main-container > .banner-contact-container .sub-heading{
         font-size: 0.8rem;
@@ -800,18 +821,30 @@ mobile responsive media quries
         font-size: 1rem;
     }
     .floor-plan-main-container .floor-plan-image-container{
-        height: 40vh;
+        height: 50vh;
+        width: 100%;
+    }
+    .floor-plan-main-container .floor-plan-image-container .carousel-item > .floor-plan{
+        height: 45vh;
     }
     .header-main-container .header-inner-container .logo-main-container{
         width: 40%;
     }
+    .proximity-main-container .proximity-grid-container{
+        padding: 0 10px;
+        column-gap: 20px;
+    }
 
     .proximity-main-container .proximity-grid-container .proximity-item-container{
         flex-direction: column;
+        height: 20vh;
     }
     .proximity-main-container .proximity-grid-container .proximity-item-container > .icon-container > i{
         margin: 10px 0;
-        font-size: 2rem;
+        font-size: 2.3rem;
+    }
+    .proximity-main-container .proximity-grid-container .proximity-item-container > .content-container{
+        width: 90%;
     }
     .proximity-main-container .proximity-grid-container .proximity-item-container > .content-container .sub-heading{
         font-size: 1rem
@@ -830,6 +863,29 @@ mobile responsive media quries
     .proximity-main-container .proximity-grid-container .proximity-item-container > .proximity-overlay-container ul> li{
         font-size: 0.8rem
     }
+    .section-main-container .section-content-container{
+        padding: 10px 0;
+    }
+    .floor-plan-main-container .flex-main-container{
+        grid-template-columns: 100%;
+        padding: 5px;
+    }
+
+    .highlights-main-container .highlights-items-inner-container{
+        height: auto;
+        background-image: none;
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .highlights-main-container .highlights-items-inner-container .float-container{
+        position: relative;
+        top: auto !important;
+        left: auto !important;
+        right: auto !important;
+        bottom: auto !important;
+        width: auto !important;
+        margin: 10px 0;
+    }
 
     .contact-main-container-2 >.grid-section{
         grid-template-columns: auto;
@@ -838,6 +894,10 @@ mobile responsive media quries
     }
     .contact-main-container-2 >.grid-section > .logo-container >img{
         width: 60%;
+    }
+    .contact-main-container-2 >.grid-section .contact-us-details>.inner-grid-section > .grid-item{
+        grid-template-columns: 55px auto;
+        row-gap: 10px;
     }
     .testimonials-carousel-main-container .slick-prev:before, .testimonials-carousel-main-container .slick-next:before{
         font-size: 2rem;
@@ -855,7 +915,11 @@ mobile responsive media quries
     }
     .section-main-container .section-content-container .title-container > .main-heading{
         margin: 10px 0;
-        font-size: 1.6rem;
+        font-size: 1.5rem;
+    }
+    .section-main-container .section-content-container .title-container > .sub-heading{
+        font-size: 1.2rem;
+        margin: 0 5px;
     }
     .section-main-container .section-content-container .text-container > .text{
         width: 95%;

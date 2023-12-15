@@ -86,7 +86,7 @@ body{
     width: 100%;
     position: fixed;
     top: 0;
-    background: rgba(0, 0, 0, 0.4); 
+    background: rgba(0, 0, 0, 0.6); 
     backdrop-filter: blur(5px);
     z-index: 100;
 }
@@ -312,6 +312,11 @@ Tablet responsive media quries
         padding: 15px;
         text-align: center;
         border-bottom: 1px solid rgba(255, 255, 255, 0.408);
+    }
+    .toggle-menu-main-container .menu-item .sm-icon-container i{
+        margin: 5px;
+        color: white;
+        font-size: 1.2rem;
     }
     .toggle-menu-main-container .menu-item > .nav-link{
         text-decoration: none;
