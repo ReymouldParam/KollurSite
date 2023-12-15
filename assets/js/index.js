@@ -171,3 +171,8 @@ const observeSlideInRight = new IntersectionObserver((entries) => {
 
 const slideInRightSections = document.querySelectorAll(".slideInRightAnimDefault");
 slideInRightSections.forEach((ele) => observeSlideInRight.observe(ele));
+
+
+function closeFormResponce(){
+  $("#formResponse").css("display","none");
+}

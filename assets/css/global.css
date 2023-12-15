@@ -39,13 +39,45 @@ body{
     background-position: top;
 }
 
-.floating-whatsapp-icon{
+#whatsapp-icon-container{
     position: fixed;
     bottom: 20px;
     right: 20px;
-    color: #25D366;
     z-index: 10;
+}
+
+#whatsapp-icon-container .floating-whatsapp-icon{
+    color: #25D366;
     font-size: 50px;
+}
+
+#formResponse{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.326);
+    z-index: 10;
+    display: none;
+}
+
+#formResponse .form-response-container{
+    padding: 20px;
+    background-color: white;
+    width: 30%;
+}
+#formResponse .form-response-container .title-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+#formResponse .form-response-container .title-container .close-btn{
+    cursor: pointer;
+    font-size: larger;
+    font-weight: bolder;
 }
 
 /* Header styles */
@@ -120,7 +152,7 @@ body{
 /* footer styles */
 .page-footer-main-container{
     padding-top: 20px;
-    background-image: url(../images/footer-bg.png);
+    background-image: url(../images/footer-bg.webp);
     background-position: bottom;
     background-repeat: no-repeat;
     background-size:100% 70%;
@@ -215,7 +247,8 @@ body{
     margin: 20px 0;
 }
 .contact-main-container-2 >.grid-section .contact-us-details>.inner-grid-section > .grid-item{
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto;
     color: white;
     font-size: 0.8rem;
     font-family: var(--text-font);

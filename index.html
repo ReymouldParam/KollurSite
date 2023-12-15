@@ -40,9 +40,21 @@
 </head>
 <body>
 
-    <!-- floating elemets -->
+    <!-- Fixed elemets -->
 
-    <i class="fa-brands fa-square-whatsapp floating-whatsapp-icon"></i>
+    <div id="whatsapp-icon-container">
+        <a href="https://wa.me/+918008318008" target="_blank"><i class="fa-brands fa-square-whatsapp floating-whatsapp-icon"></i>
+        </a>
+    </div>
+    
+    <div id="formResponse">
+        <div class="form-response-container">
+            <div class="title-container"><h3 class="title utility-main-heading">Success</h3> <span class="close-btn" onclick="closeFormResponce()"><i class="fa-solid fa-xmark"></i></span></div>
+            <div class="message-container">
+                <p class="utility-text">Our team will contact you at earliest.</p>
+            </div>
+        </div>
+    </div>
 
     <!-- Floating Header -->
     <header class="header-main-container">
@@ -69,9 +81,9 @@
                 </div>
                 <div class="nav-item">
                     <div class="sm-icon-container">
-                        <a href=""><i class="fa-brands fa-instagram"></i></a>
-                        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href=""><i class="fa-brands fa-x-twitter"></i></a>       
+                        <a href="https://www.instagram.com/gruhalayaconstructions/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61554797273567" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>       
                     </div>
                 </div>
             </nav>
@@ -127,11 +139,15 @@
         <div class="banner-contact-container">
             <div class="inner-container">
                 <p class="sub-heading utility-sub-heading slideInRightAnimDefault"><i class="fa-solid fa-phone"></i> Call Today</p>
-                <p class="main-heading utility-sub-heading slideInRightAnimDefault">+91-99999 99999</p>
+                <p class="main-heading utility-sub-heading slideInRightAnimDefault">+91 8008 31 8008</p>
             </div>
         </div>
 
         <div class="shooting-star-container">
+            <span class="star"></span>
+            <span class="star"></span>
+            <span class="star"></span>
+            <span class="star"></span>
             <span class="star"></span>
         </div>
     </section>
@@ -152,8 +168,16 @@
                 <p class="text utility-text">Founded on the principle that a home should reflect the lifestyle and aspirations of its residents, Gruhalaya was envisioned as more than just a collection of buildings. We set out to create a haven where individuals and families could thrive, connecting with both their surroundings and each other. We invite you to explore our website, discover our floor plans, and envision the possibilities that await you at Gruhalaya. Welcome to a new chapter of comfortable living and vibrant community.</p>
             </div>
 
-            <div class="about-us-image-container zoomInAnimDefault">
-                <img src="assets/images/about-us.webp" alt="" class="about-us-img">
+            <div class="about-us-image-container ">
+                <div class="image">
+                    <img src="assets/images/gallery/1.webp" alt="house img">
+                </div>
+                <div class="image">
+                    <img src="assets/images/gallery/2.webp" alt="house img">
+                </div>
+                <div class="image">
+                    <img src="assets/images/gallery/5.webp" alt="house img">
+                </div>
             </div>
         </div>
 
@@ -162,10 +186,10 @@
 
     <!-- proximity section -->
     <section class="proximity-main-container section-main-container utility-background-propery">
-        <div class="about-us-content-container utility-section section-content-container">
+        <div class="proximity-content-container utility-section section-content-container">
             <div class="title-container">
                 <h2 class="sub-heading utility-sub-heading">Proximity to Convenience and Leisure</h2>
-                <h1 class="main-heading utility-main-heading">Your Gateway to Convenience and Excitement</h1>
+                <!-- <h1 class="main-heading utility-main-heading">Your Gateway to Convenience and Excitement</h1> -->
             </div>
             <!-- <div class="text-container">
                 <p class="text utility-text">At Gruhalaya, we bring your vision to life. With a commitment to quality craftsmanship, attention to detail, and a passion for construction, we are your trusted partner in building the future.Enjoy the comfort and privacy of luxury living with amenities in an upscale apartment.</p>
@@ -186,28 +210,13 @@
                 <div class="proximity-overlay-container">
                     <h1 class="main-heading">Near By schools</h1>
                     <ul>
-                        <li>school 1</li>
-                        <li>School 2</li>
-                        <li>School 3</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="proximity-item-container">
-                <div class="icon-container">
-                    <i class="fa-solid fa-store"></i>
-                </div>
-                <div class="content-container">
-                    <h1 class="main-heading utility-main-heading"> Shopping Malls</h1>
-                    <h2 class="sub-heading utility-main-heading">2 km</h2>
-                </div>
-                <!-- overlay content -->
-                <div class="proximity-overlay-container">
-                    <h1 class="main-heading">Near By schools</h1>
-                    <ul>
-                        <li>school 1</li>
-                        <li>School 2</li>
-                        <li>School 3</li>
+                        <li>Meru International School</li>
+                        <li>Gaudium International school</li>
+                        <li>Samisti international school</li>
+                        <li>DPS public school</li>
+                        <li>Candidus internation school</li>
+                        <li>Narayana school</li>
+                        <li>Birla international school</li>
                     </ul>
                 </div>
             </div>
@@ -222,11 +231,53 @@
                 </div>
                 <!-- overlay content -->
                 <div class="proximity-overlay-container">
-                    <h1 class="main-heading">Near By schools</h1>
+                    <h1 class="main-heading">Near By Hospitals</h1>
                     <ul>
-                        <li>school 1</li>
-                        <li>School 2</li>
-                        <li>School 3</li>
+                        <li>Truma and Critical care </li>
+                        <li>Max Care Hospital </li>
+                        <li>Medicover hospital</li>
+                        <li>Continental Hospital</li>
+                        <li>RM hospital</li>
+                        <li>Pranam Hospital</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="proximity-item-container">
+                <div class="icon-container">
+                    <i class="fa-solid fa-city"></i>
+                </div>
+                <div class="content-container">
+                    <h1 class="main-heading utility-main-heading">IT Park</h1>
+                    <h2 class="sub-heading utility-main-heading">2 km</h2>
+                </div>
+                <!-- overlay content -->
+                <div class="proximity-overlay-container">
+                    <h1 class="main-heading">Near By IT parks</h1>
+                    <ul>
+                        <li>Wipro Circle</li>
+                        <li>DLF Gachibowli</li>
+                        <li>Financial district</li>
+                        <li>Neopolis - Kokapet</li>
+                        <li>ITIR Zone</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="proximity-item-container">
+                <div class="icon-container">
+                    <i class="fa-solid fa-store"></i>
+                </div>
+                <div class="content-container">
+                    <h1 class="main-heading utility-main-heading"> Entertainment</h1>
+                    <h2 class="sub-heading utility-main-heading">2 km</h2>
+                </div>
+                <!-- overlay content -->
+                <div class="proximity-overlay-container">
+                    <h1 class="main-heading">Near By Fun Places</h1>
+                    <ul>
+                        <li>Cine Mart Multiplex</li>
+                        <li>Value zone Hypermart</li>
                     </ul>
                 </div>
             </div>
@@ -236,16 +287,15 @@
                     <i class="fa-solid fa-road"></i>
                 </div>
                 <div class="content-container">
-                    <h1 class="main-heading utility-main-heading">National Highway</h1>
+                    <h1 class="main-heading utility-main-heading">Journey Visinity</h1>
                     <h2 class="sub-heading utility-main-heading">2 km</h2>
                 </div>
                 <!-- overlay content -->
                 <div class="proximity-overlay-container">
-                    <h1 class="main-heading">Near By schools</h1>
+                    <h1 class="main-heading">Trasportation means</h1>
                     <ul>
-                        <li>school 1</li>
-                        <li>School 2</li>
-                        <li>School 3</li>
+                        <li>Metro Propsed</li>
+                        <li>Nagulapally Railway station (proposed 27 platforms)</li>
                     </ul>
                 </div>
             </div>
@@ -261,30 +311,28 @@
 
                 <!-- overlay content -->
                 <div class="proximity-overlay-container">
-                    <h1 class="main-heading">Near By schools</h1>
+                    <h1 class="main-heading">Nearest ORR exit</h1>
                     <ul>
-                        <li>school 1</li>
-                        <li>School 2</li>
-                        <li>School 3</li>
+                        <li>ORR exit number 2</li>
                     </ul>
                 </div>
             </div>
 
             <div class="proximity-item-container">
                 <div class="icon-container">
-                    <i class="fa-solid fa-cart-shopping"></i>
+                    <i class="fa-solid fa-graduation-cap"></i>
                 </div>
                 <div class="content-container">
-                    <h1 class="main-heading utility-main-heading">Super Market</h1>
+                    <h1 class="main-heading utility-main-heading">Collage</h1>
                     <h2 class="sub-heading utility-main-heading">2 km</h2>
                 </div>
                 <!-- overlay content -->
                 <div class="proximity-overlay-container">
-                    <h1 class="main-heading">Near By schools</h1>
+                    <h1 class="main-heading">Near By collages</h1>
                     <ul>
-                        <li>school 1</li>
-                        <li>School 2</li>
-                        <li>School 3</li>
+                        <li>Icfai Buisiness school</li>
+                        <li>Geetham university</li>
+                        <li>CBIT / MGIT</li>
                     </ul>
                 </div>
             </div>
@@ -299,11 +347,9 @@
                 </div>
                 <!-- overlay content -->
                 <div class="proximity-overlay-container">
-                    <h1 class="main-heading">Near By schools</h1>
+                    <h1 class="main-heading">Near By Railway</h1>
                     <ul>
-                        <li>school 1</li>
-                        <li>School 2</li>
-                        <li>School 3</li>
+                        <li>Nagulapally Railway station (proposed 27 platforms)</li>
                     </ul>
                 </div>
             </div>
@@ -313,16 +359,15 @@
                     <i class="fa-solid fa-city"></i>
                 </div>
                 <div class="content-container">
-                    <h1 class="main-heading utility-main-heading">IT Park</h1>
+                    <h1 class="main-heading utility-main-heading">Sports acadamy</h1>
                     <h2 class="sub-heading utility-main-heading">2 km</h2>
                 </div>
                 <!-- overlay content -->
                 <div class="proximity-overlay-container">
-                    <h1 class="main-heading">Near By schools</h1>
+                    <h1 class="main-heading">Near By Sports acadamies</h1>
                     <ul>
-                        <li>school 1</li>
-                        <li>School 2</li>
-                        <li>School 3</li>
+                        <li>YNR sports acadamy</li>
+                        <li>Suresh cricket ground</li>
                     </ul>
                 </div>
             </div>
@@ -541,11 +586,11 @@
             <div class="grid-item">
                 <div class="highlight-item">
                     <div class="icon-container">
-                        <img src="assets/images/icons/4.png" alt="icon" class="icon">
+                        <img src="assets/images/icons/10.png" alt="icon" class="icon">
                     </div>
                     <div class="content-container">
-                        <p class="main-heading">7.5 Acres</p>
-                        <p class="sub-heading">Central Lawn</p>
+                        <p class="main-heading">Lift</p>
+                        <p class="sub-heading">Automated</p>
                     </div>
                 </div>
             </div>
@@ -565,11 +610,11 @@
             <div class="grid-item">
                 <div class="highlight-item">
                     <div class="icon-container">
-                        <img src="assets/images/icons/14.png" alt="icon" class="icon">
+                        <img src="assets/images/icons/20.png" alt="icon" class="icon">
                     </div>
                     <div class="content-container">
-                        <p class="main-heading">party lawn</p>
-                        <p class="sub-heading">for occations</p>
+                        <p class="main-heading">Water Softner</p>
+                        <p class="sub-heading">Pure drinking water</p>
                     </div>
                 </div>
             </div>
@@ -577,11 +622,11 @@
             <div class="grid-item">
                 <div class="highlight-item">
                     <div class="icon-container">
-                        <img src="assets/images/icons/15.png" alt="icon" class="icon">
+                        <img src="assets/images/icons/5.png" alt="icon" class="icon">
                     </div>
                     <div class="content-container">
-                        <p class="main-heading">pet park</p>
-                        <p class="sub-heading">pet food facilites</p>
+                        <p class="main-heading">Terrace Garden</p>
+                        <p class="sub-heading">Sit out area</p>
                     </div>
                 </div>
             </div>
@@ -592,7 +637,7 @@
                         <img src="assets/images/icons/16.png" alt="icon" class="icon">
                     </div>
                     <div class="content-container">
-                        <p class="main-heading">Solar Fencing</p>
+                        <p class="main-heading">Electric Fencing</p>
                         <p class="sub-heading">Avaliable</p>
                     </div>
                 </div>
@@ -617,7 +662,7 @@
                     </div>
                     <div class="content-container">
                         <p class="main-heading">Sports</p>
-                        <p class="sub-heading">Play Courts</p>
+                        <p class="sub-heading">Play area</p>
                     </div>
                 </div>
             </div>
@@ -831,18 +876,18 @@
         <div class="page-footer-inner-container">
             <div class="contact-main-container utility-section" >
                 <div class="contact-form slideUpHalfAnimDefault">
-                    <form action="">
+                    <form action="contact.php" method="post">
                         <div class="title-container">
                             <h3 class="title utility-main-heading">Get in touch</h3>
                         </div>
                         <div class="form-input-container">
-                            <input type="text" placeholder="First Name">
-                            <input type="text" placeholder="Last Name">
-                            <input type="text" placeholder="Email Id">
-                            <input type="text" placeholder="Mobile No.">
+                            <input type="text" placeholder="First Name" name="fname" required>
+                            <input type="text" placeholder="Last Name" name="lname">
+                            <input type="text" placeholder="Email Id" name="email" required>
+                            <input type="text" placeholder="Mobile No." name="mobile" required>
                         </div>
                         <div class="form-text-area-container">
-                            <textarea name="" id="" rows="5" placeholder="Enter Your"></textarea>
+                            <textarea rows="5" placeholder="Enter Your Message" name="message" required></textarea>
                         </div>
                         <div class="button-container">
                             <button class="submit-btn" type="submit">Send Message</button>
@@ -852,7 +897,7 @@
                 <div class="map-container slideUpHalfAnimDefault">
                     <iframe
                     frameborder="0"
-                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDcAkUX5wu6apU6WsyaNye8gqgDi8qnkWY&q=17.50446845222854,78.47750812503234"
+                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDcAkUX5wu6apU6WsyaNye8gqgDi8qnkWY&q=17.48829659722512,78.23345322100684"
                     allowfullscreen
                     ></iframe>
                     <!-- replace q value in above google maps (src attribute) api link with required latitude and longitude -->
@@ -868,32 +913,54 @@
                         <div class="inner-grid-section">
                             <div class="grid-item">
                                 <i class="fa-solid fa-location-dot"></i>
-                                <p class="address">Padmanagar Phase II,<br>Quthbullapur Hyderabad,<br>Telangana</p>
+                                <p class="address">Plot # 8, Silicon City Phase - 3, <br>Adjacent  Hallmark Vesta,<br>Near Kollur,<br>Pati - 502300 Telangana</p>
                             </div>
                             <div class="grid-item">
                                 <i class="fa-solid fa-phone"></i>
-                                <p>+91 99999 99999<br>+91 99999 99998</p>
+                                <p>+91 8008 31 8008<br>+91 8600 09 2682</p>
+                                <i class="fa-solid fa-envelope"></i>
+                                <p>contactgruhalaya@gmail.com</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="copyright-container utility-section">
-                <p class="text utility-text">Gruhalaya @ Copyright All rights reserved 2023. Developed by <a target="_blank" href="https://reymould.com/">Reymould technologies and solutions</a></p>
+                <p class="text utility-text">Gruhalaya Constructions @ Copyright All rights reserved 2023-24. Developed by <a target="_blank" href="https://reymould.com/">Reymould technologies and solutions</a></p>
             </div>
         </div>
     </footer>
-
-    <script>
-        var bannerBtn = document.querySelector(".chat-with-us-btn");
-        var leftValue = (bannerBtn.offsetWidth/2)-(bannerBtn.offsetHeight/2);
-        bannerBtn.style.left="-"+leftValue+"px"
-    </script>
-
 
 <!-- Slick Carousel JavaScript -->
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
 <!-- java scrip files -->
 <script src="assets/js/index.js"></script>
+
+<script>
+    var bannerBtn = document.querySelector(".chat-with-us-btn");
+    var leftValue = (bannerBtn.offsetWidth/2)-(bannerBtn.offsetHeight/2);
+    bannerBtn.style.left="-"+leftValue+"px"
+</script>
+
+
+
+
+<script>
+    // Form responce
+    const urlParams = new URLSearchParams(window.location.search);
+    const flagValue = urlParams.get('emailStatus');
+
+    if(flagValue=="contactPass"){
+        document.getElementById("formResponse").style.display="flex";
+    }
+
+
+    // Get the current URL without the query parameters
+    const baseUrl = window.location.href.split('?')[0];
+
+    // Replace the current state with a new state without the query parameters
+    history.replaceState(null, null, baseUrl);
+</script>
+
 </body>
 </html>
