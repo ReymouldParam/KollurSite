@@ -280,6 +280,10 @@
     height: 18vh;
 }
 
+.proximity-main-container .proximity-grid-container .proximity-item-container:nth-child(10){
+    display: none;
+}
+
 .proximity-main-container .proximity-grid-container .proximity-item-container > .icon-container{
     width: 40%;
     display: flex;
@@ -405,7 +409,7 @@
     background-image: url(../images/logo-big.webp);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 130px auto;
+    background-size: 150px auto;
 }
 
 .highlights-main-container .highlights-items-inner-container .logo-container > .logo{
@@ -544,14 +548,12 @@
     transition: all 0.3s linear;
 }
 .gallery-carousel-main-container .slick-current{
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
+
     transform: scale(1.2);
 }
 .gallery-carousel-main-container *{
     overflow: visible;
 }
-
 
 .gallery-carousel-main-container .carousel-item > .gallery-img{
     height: 100%;
@@ -729,6 +731,20 @@
 }
 .testimonials-2-carousel-main-container .slick-dots li.slick-active button:before{
     background-color: var(--theme-color-orange);
+}
+
+
+/* *****************
+Screen width greater than 2000px media quries
+**************** */
+
+@media screen and (min-width:1800px) and (max-width:2500px){
+    .proximity-main-container .proximity-grid-container .proximity-item-container > .content-container .main-heading{
+        font-size: 2rem;
+    }
+    .highlights-main-container .highlights-items-inner-container{
+        background-size: 200px auto;
+    }
 }
 
 /* responsive style for laptop screen less than 1200px width */
@@ -1023,6 +1039,7 @@ mobile responsive media quries
     .testimonials-carousel-main-container .carousel-item{
         transform: scale(0.7);
         height: 28vw;
+        transition: all 0.3s;
     }
     .testimonials-carousel-main-container .slick-current{
         transform: scale(1);
@@ -1044,5 +1061,13 @@ mobile responsive media quries
     .page-footer-main-container{
         background-size: auto 80%;
     }
-
+    .proximity-main-container .proximity-grid-container .proximity-item-container:nth-child(10){
+        display: flex;
+    }
+    .gallery-carousel-main-container .carousel-item{
+        margin: 0;
+    }
+    .gallery-carousel-main-container .slick-current{
+        transform: scale(1);
+    }
 }
