@@ -1,17 +1,19 @@
 $(".gallery-carousel-main-container").slick({
-    slidesToShow: 2, 
+    slidesToShow: 3, 
     slidesToScroll: 1,
     autoplay: true, 
-    autoplaySpeed: 5000,
+    autoplaySpeed: 3000,
     centerMode:true,
-    centerPadding: '15%',
+    centerPadding: '0',
     dots: true,
     focusOnSelect:true,
+    nextArrow:'<button class="nextBtn slick-btn"><i class="fa-solid fa-chevron-right"></i></button>',
+    prevArrow:'<button class="prevBtn slick-btn"><i class="fa-solid fa-chevron-left"></i></button>',
     responsive: [
         {
           breakpoint: 900,
           settings: {
-            slidesToShow: 1,
+            slidesToShow: 3,
             slidesToScroll: 1
           }
         },
@@ -38,7 +40,8 @@ $(".floor-plan-image-container").slick({
   dots: false,
   arrows:false,
   fade:true,
-  focusOnHover:false
+  focusOnHover:false,
+  pauseOnHover:false,
 });
 
 $(".testimonials-carousel-main-container").slick({

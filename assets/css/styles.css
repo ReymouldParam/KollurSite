@@ -127,17 +127,17 @@
 .banner-main-container .shooting-star-container .star:nth-child(2){
     top: 20%;
     right: 80%;
-    animation-duration: 3s;
+    animation-duration: 5s;
 }
 .banner-main-container .shooting-star-container .star:nth-child(3){
     top: 30%;
     right: 20%;
-    animation-duration: 2s;
+    animation-duration: 3s;
 }
 .banner-main-container .shooting-star-container .star:nth-child(4){
     top: 50%;
     right: 65%;
-    animation-duration: 5s;
+    animation-duration: 7s;
 }
 .banner-main-container .shooting-star-container .star:nth-child(5){
     top: 65%;
@@ -171,9 +171,18 @@
 
 .about-us-main-container .about-us-image-container{
     position: relative;
-    height: 70vh;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.about-us-main-container .about-us-image-container .about-us-img{
+    width: 100%;
+}
+
+/*about us image animation version 2 */
+/* 
 .about-us-image-container .image{
     position: absolute;
     overflow: hidden;
@@ -203,7 +212,7 @@
 
 .about-us-image-container .image > img{
     height: 100%;
-}
+} */
 
 
 .about-us-main-container .flex-main-container{
@@ -264,7 +273,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color:#0077ccd9;
+    background-color:#0077CC94;
     border-radius: 20px;
     padding: 20px;
     position: relative;
@@ -290,16 +299,17 @@
 
 .proximity-main-container .proximity-grid-container .proximity-item-container > .content-container .main-heading{
     color: var(--theme-color-orange);
-    -webkit-text-stroke: #fff;
-    -webkit-text-stroke-width: 0.3px;
+    /* -webkit-text-stroke: #fff;
+    -webkit-text-stroke-width: 0.3px; */
     /* text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.851); */
-    text-shadow: 0;
+    text-shadow: none;
     margin-bottom: 8px;
     font-size: 1.8rem;
 }
 
 .proximity-main-container .proximity-grid-container .proximity-item-container > .content-container .sub-heading{
     color: white;
+    font-size: 1.2rem;
 }
 
 .proximity-main-container .proximity-grid-container .proximity-item-container > .content-container .sub-heading> span{
@@ -319,7 +329,7 @@
     transform: translateY(-30px) scale(0);
     transition: all 0.3s linear;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     box-sizing: border-box;
     overflow-y: auto;
 }
@@ -337,7 +347,7 @@
 .proximity-main-container .proximity-grid-container .proximity-item-container > .proximity-overlay-container .main-heading{
     color: white;
     font-family: var(--main-heading-font);
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .proximity-main-container .proximity-grid-container .proximity-item-container > .proximity-overlay-container ul{
     list-style: none;
@@ -348,10 +358,10 @@
     margin: 5px 0;
 }
 
-
 .highlights-main-container .highlights-grid-main-container{
     display: grid;
-    grid-template-columns: auto auto auto auto auto;
+    grid-template-columns:  repeat(5, 1fr);
+    grid-template-rows:  repeat(2, 1fr);
 }
 
 .highlights-main-container .highlights-grid-main-container .highlight-item .icon-container{
@@ -443,7 +453,6 @@
 }
 .highlights-main-container .highlights-items-inner-container .float-container:hover .title-container > .title{
     font-size: 1.5rem;
-    
 }
 
 .highlights-main-container .highlights-items-inner-container .float-container .content-container{
@@ -526,10 +535,24 @@
     height: 50vh;
     text-align: center;
     overflow: hidden;
-    margin: 20px;
+    margin: 30px 0 60px;
     border-radius: 20px;
     border: 3px solid var(--theme-color-orange);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s linear;
 }
+.gallery-carousel-main-container .slick-current{
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    transform: scale(1.2);
+}
+.gallery-carousel-main-container *{
+    overflow: visible;
+}
+
+
 .gallery-carousel-main-container .carousel-item > .gallery-img{
     height: 100%;
     width: auto;
@@ -542,14 +565,28 @@
 
 }
 
-.gallery-carousel-main-container .slick-prev{
-    left: 15px;
-    z-index: 1;
+.gallery-carousel-main-container .slick-btn{
+    font-size: 20px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: 0;
+    color: white;
+    font-weight: 1000;
+    background-color: #00000071;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    margin: auto;
+    z-index: 2;
 }
-.gallery-carousel-main-container .slick-next{
-    right: 15px;
-    z-index: 1;
+.gallery-carousel-main-container .nextBtn{
+    right: 0;
 }
+.gallery-carousel-main-container .prevBtn{
+    left: 0;
+}
+
 .gallery-carousel-main-container .slick-prev:before,.gallery-carousel-main-container .slick-next:before{
     opacity: 1;
     font-size: 2rem;
@@ -705,18 +742,43 @@
         font-size: 1.3rem;
     }
     .proximity-main-container .proximity-grid-container .proximity-item-container {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        background-color: #0077ccd9;
-        border-radius: 20px;
         padding: 8px;
         position: relative;
-        height: 17vh;
+        height: 20vh;
     }
     .proximity-main-container .proximity-grid-container .proximity-item-container > .icon-container{
-        width: 70%;
+        width: 35%;
     }
+
+    .banner-main-container .banner-content-container .main-heading{
+        font-size: 5rem;
+    }
+
+    .banner-main-container > .chat-with-us-btn{
+        padding: 5px 15px;
+        font-size: 15px;
+    }
+
+    .proximity-main-container .proximity-grid-container{
+        padding: 0 70px;
+    }
+
+    .about-us-main-container .flex-main-container .text-container .text{
+        font-size: 0.8rem;
+    }
+    .highlights-main-container .highlights-items-inner-container .float-container:hover .title-container > .title{
+        font-size: 1.3rem;
+    }
+    .gallery-carousel-main-container .carousel-item{
+        height: 40vh;
+    }
+    .highlights-main-container .highlights-grid-main-container .highlight-item .content-container .main-heading{
+        font-size: 1.1rem;
+    }
+    .highlights-main-container .highlights-grid-main-container .highlight-item .content-container .sub-heading{
+        font-size: 0.8rem;
+    }
+
     
 }
 
@@ -729,6 +791,10 @@
     }
     .banner-main-container .banner-content-container .main-heading{
         font-size: 5rem;
+    }
+    .about-us-main-container .flex-main-container{
+        grid-template-columns: auto;
+        padding: 0 20px;
     }
 
     .highlights-main-container .highlights-grid-main-container .highlight-item .icon-container{
@@ -767,6 +833,8 @@
 
     .proximity-main-container .proximity-grid-container{
         grid-template-columns: repeat(3, 1fr);
+        padding: 0 30px;
+        column-gap: 20px;
     }
     .proximity-main-container .proximity-grid-container .proximity-item-container > .proximity-overlay-container{
         padding: 15px;
@@ -774,6 +842,12 @@
     .proximity-main-container .proximity-grid-container .proximity-item-container > .proximity-overlay-container .main-heading{
         margin-bottom: 10px;
         font-size: 1.2rem;
+    }
+    .highlights-main-container .highlights-items-inner-container .float-container .title-container > .title{
+        font-size: 1.6rem;
+    }
+    .gallery-carousel-main-container .carousel-item{
+        height: 26vh;
     }
 }
 
@@ -804,10 +878,7 @@ mobile responsive media quries
     .about-us-main-container .about-us-image-container > .about-us-img{
         width: 95%;
     }
-    .about-us-main-container .flex-main-container{
-        grid-template-columns: auto;
-        padding: 0 20px;
-    }
+    
     .about-us-main-container .about-us-image-container{
         height: 35vh;
     }

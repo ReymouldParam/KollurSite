@@ -86,7 +86,7 @@ body{
     width: 100%;
     position: fixed;
     top: 0;
-    background: rgba(0, 0, 0, 0.6); 
+    background: rgba(0, 0, 0, 0.7); 
     backdrop-filter: blur(5px);
     z-index: 100;
 }
@@ -277,6 +277,19 @@ body{
     font-weight: 100;
     text-decoration: none;
 }
+/* *****************
+laptop screen 1200px<screen width responsive media quries
+**************** */
+
+@media screen and (max-width:1200px) {
+    .utility-section{
+        padding: 5px 40px;
+    }
+
+    .utility-text{
+        font-size: 0.8rem;
+    }
+}
 
 /* *****************
 Tablet responsive media quries
@@ -323,5 +336,19 @@ Tablet responsive media quries
         color: white;
         font-size: 1.2rem;
         font-family: var(--text-font);
+    }
+
+    #formResponse .form-response-container{
+        width: 80%;
+    }
+    .contact-main-container-2 >.grid-section{
+        grid-template-columns: 30% auto;
+    }
+    .contact-main-container-2 > .grid-section .logo-container{
+        width: 90%;
+    }
+    .page-footer-main-container .page-footer-inner-container .copyright-container{
+        padding: 10px 0;
+        margin: 0 55px;
     }
 }
