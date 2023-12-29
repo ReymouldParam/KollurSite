@@ -8,7 +8,7 @@ $(document).ready(function(){
       centerPadding: '0',
       dots: true,
       focusOnSelect:true,
-      pauseOnHover:false,
+      pauseOnHover:true,
       nextArrow:'<button class="nextBtn slick-btn"><i class="fa-solid fa-chevron-right"></i></button>',
       prevArrow:'<button class="prevBtn slick-btn"><i class="fa-solid fa-chevron-left"></i></button>',
       responsive: [
@@ -20,7 +20,7 @@ $(document).ready(function(){
             }
           },
           {
-            breakpoint: 650,
+            breakpoint: 550,
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1
@@ -114,6 +114,38 @@ $(document).ready(function() {
     navMenuVisible = false;
   });
 });
+
+/////////////////////////////
+// hovered content visibility
+/////////////////////////////
+
+function toggleVisibility(clickedElement) {
+  const containers = document.querySelectorAll('.proximity-item-container');
+  
+  // Toggle the 'active' class on the clicked element
+  clickedElement.classList.toggle('active');
+
+  // Hide all other containers
+  containers.forEach(container => {
+    if (container !== clickedElement) {
+      container.classList.remove('active');
+    }
+  });
+}
+
+function toggleVisibility2(clickedElement) {
+  const containers = document.querySelectorAll('.float-container');
+  
+  // Toggle the 'active' class on the clicked element
+  clickedElement.classList.toggle('active');
+
+  // Hide all other containers
+  containers.forEach(container => {
+    if (container !== clickedElement) {
+      container.classList.remove('active');
+    }
+  });
+}
 
 
 //////////////////////////////
