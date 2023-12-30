@@ -244,10 +244,11 @@
 .proximity-main-container {
     position: relative; /* Make sure the container is positioned relative so that the absolute positioning of :before is relative to it */
     background-color: #fff;
-    border-top: 3px solid var(--theme-color-orange);
-    border-bottom: 3px solid var(--theme-color-orange);
+    /* border-top: 3px solid var(--theme-color-orange);
+    border-bottom: 3px solid var(--theme-color-orange); */
     background-image: url(../images/gallery/1.webp);
     background-size: cover;
+    padding-bottom: 30px;
 
 }
 
@@ -586,7 +587,7 @@
     overflow: hidden;
     margin: 30px 0 60px;
     border-radius: 20px;
-    border: 3px solid var(--theme-color-orange);
+    border: 2px solid var(--theme-color-orange);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -607,8 +608,8 @@
 
 .gallery-main-container{
     background-color: #fff;
-    border-top: 3px solid var(--theme-color-orange);
-    border-bottom: 3px solid var(--theme-color-orange);
+    border-top: 1px solid var(--theme-color-orange);
+    border-bottom: 1px solid var(--theme-color-orange);
 
 }
 
@@ -655,8 +656,8 @@
 
 .floor-plan-main-container{
     background-color: #fff;
-    border-top: 3px solid var(--theme-color-orange);
-    border-bottom: 3px solid var(--theme-color-orange);
+    border-top: 1px solid var(--theme-color-orange);
+    border-bottom: 1px solid var(--theme-color-orange);
 }
 
 .floor-plan-main-container .flex-main-container{
@@ -1036,7 +1037,7 @@ mobile responsive media quries
         width: 100%;
     }
     .floor-plan-main-container .floor-plan-image-container .carousel-item > .floor-plan{
-        height: 45vh;
+        height: 35vh;
     }
     .header-main-container .header-inner-container .logo-main-container{
         width: 40%;
@@ -1198,5 +1199,6 @@ mobile responsive media quries
     }
     .gallery-carousel-main-container .slick-current{
         transform: scale(1);
+        margin-bottom: 20px;
     }
 }
