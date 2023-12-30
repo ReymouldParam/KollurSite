@@ -32,20 +32,6 @@ $(document).ready(function(){
         ]
   });
 
-  $(".floor-plan-image-container").slick({
-    slidesToShow: 1, 
-    slidesToScroll: 1,
-    autoplay: true, 
-    autoplaySpeed: 3000,
-    centerMode:true,
-    centerPadding: '0',
-    dots: false,
-    arrows:false,
-    fade:true,
-    focusOnHover:false,
-    pauseOnHover:false,
-  });
-
   $(".testimonials-carousel-main-container").slick({
       slidesToShow: 3, 
       slidesToScroll: 1,
@@ -55,18 +41,19 @@ $(document).ready(function(){
       centerPadding: '0',
       dots: false,
       focusOnSelect:true,
+      pauseOnHover:true,
       asNavFor:'.testimonials-2-carousel-main-container'
   });
 
   $(".testimonials-2-carousel-main-container").slick({
       slidesToShow: 1, 
       slidesToScroll: 1,
-      autoplay: true, 
-      autoplaySpeed: 5000,
       centerMode:true,
       centerPadding: '0',
       dots: true,
       arrows:false,
+      focusOnSelect:true,
+      pauseOnHover:true,
       asNavFor:'.testimonials-carousel-main-container',
       fade:true
   });

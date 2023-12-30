@@ -74,25 +74,35 @@
 }
 
 
-
 .banner-main-container .banner-content-container{
     position: relative;
     z-index: 1;
     overflow: hidden;
 }
 .banner-main-container .banner-content-container .main-heading{
-    font-size: 6rem;
+    font-size: 3rem;
+    color: var(--theme-color-gray);
+    margin-bottom: 10px;
 }
-.banner-main-container .banner-content-container .main-heading:first-child{
-    color: var(--theme-color-blue);
+.banner-main-container .banner-content-container .main-heading:nth-child(3){
+    text-align: right;
+    margin-right: 70px;
+    /* transition-delay: 0.1s; */
+    font-size: 3.5rem;
+    translate:0 -25px ;
 }
 .banner-main-container .banner-content-container .sub-heading{
     color: #fff;
     margin: 20px 0;
-    font-weight: 500;
+    font-weight: 300;
     letter-spacing: 1px;
     font-size: 2rem;
 }
+
+.banner-main-container .banner-content-container .apartment-logo{
+    width: 40vw;
+}
+
 
 .banner-main-container .shooting-star-container{
     position: absolute;
@@ -227,7 +237,7 @@
     flex-direction: column;
     justify-content: center;
 }
-.about-us-main-container .flex-main-container .text-container .text{
+.about-us-main-container .flex-main-container .text-container .text:first-child{
     margin-bottom: 20px;
 }
 
@@ -278,6 +288,7 @@
     padding: 20px;
     position: relative;
     height: 18vh;
+    overflow: hidden;
 }
 
 .proximity-main-container .proximity-grid-container .proximity-item-container:nth-child(10){
@@ -329,13 +340,14 @@
     height: 100%;
     width: 100%;
     border-radius: 20px;
-    opacity: 0;
-    transform: translateY(-30px) scale(0);
+    transform: translateX(-95%);
     transition: all 0.3s linear;
     text-align: left;
     padding: 10px 20%;
     box-sizing: border-box;
     overflow-y: auto;
+    background-color: var(--theme-color-orange);
+    opacity: 0.8;
 }
 
 .proximity-main-container .proximity-grid-container .proximity-item-container > .proximity-overlay-container::-webkit-scrollbar {
@@ -354,11 +366,18 @@
     background-color:#0077ccc2;
     width: 5px;
 }
+.mobile-indicator{
+    padding:0 10px;
+    text-align: left;
+    color: black;
+    position: relative;
+    z-index: 2;
+    display: none;
+}
 @media screen and (min-width:900px) {
     .proximity-main-container .proximity-grid-container .proximity-item-container:hover > .proximity-overlay-container{
-        opacity: 1;
-        background-color: var(--theme-color-orange);
         transform: translateY(0) scale(1);
+        opacity: 1;
     }
 }
 
@@ -776,6 +795,10 @@ Screen width greater than 2000px media quries
 /* responsive style for laptop screen less than 1200px width */
 
 @media screen and (max-width:1200px){
+    .banner-main-container .banner-content-container .main-heading:nth-child(3){
+        font-size: 3rem;
+        margin-right: 50px;
+    }
     .proximity-main-container .proximity-grid-container .proximity-item-container > .icon-container > i {
         font-size: 3rem;
         color: white;
@@ -790,10 +813,6 @@ Screen width greater than 2000px media quries
     }
     .proximity-main-container .proximity-grid-container .proximity-item-container > .icon-container{
         width: 35%;
-    }
-
-    .banner-main-container .banner-content-container .main-heading{
-        font-size: 5rem;
     }
 
     .banner-main-container > .chat-with-us-btn{
@@ -829,13 +848,26 @@ Screen width greater than 2000px media quries
 /* responsive styles for tablet */
 
 @media screen and (max-width:900px) {
+    .banner-main-container .banner-content-container .main-heading{
+        font-size: 3rem;
+    }
+    .banner-main-container .banner-content-container .apartment-logo{
+        width: 50vw;
+    }
+    .banner-main-container .banner-content-container .main-heading:nth-child(3){
+        font-size: 2.3rem;
+        margin-right: 30px;
+        translate: 0 -15px;
+    }
+    .banner-main-container > .section-overlay{
+        background: linear-gradient(to right,rgba(0,0,0,0.7),rgba(0,0,0,0) 110%);
+    }
+
     .banner-main-container > .chat-with-us-btn{
         font-size: 12px;
         padding: 7px;
     }
-    .banner-main-container .banner-content-container .main-heading{
-        font-size: 5rem;
-    }
+
     .about-us-main-container .flex-main-container{
         grid-template-columns: auto;
         padding: 0 20px;
@@ -900,10 +932,28 @@ Screen width greater than 2000px media quries
         height: 26vh;
     }
 
+    .proximity-main-container .proximity-grid-container .proximity-item-container > .proximity-overlay-container{
+        transform: translateX(-93%);
+        padding-right: 10% !important;
+    }
+    .proximity-main-container .proximity-grid-container .proximity-item-container > .proximity-overlay-container::before{
+        content: '\203A';
+        color: white;
+        font-weight: 900;
+        font-size: 30px;
+        position: absolute;
+        right: 3px;
+        top: 50%;
+        translate: 0 -50%;
+        transition: all 0.5s;
+    }
+
     .proximity-main-container .proximity-grid-container .proximity-item-container.active > .proximity-overlay-container{
+        transform: translateX(0) scale(1);
         opacity: 1;
-        background-color: var(--theme-color-orange);
-        transform: translateY(0) scale(1);
+    }
+    .proximity-main-container .proximity-grid-container .proximity-item-container.active > .proximity-overlay-container::before{
+        rotate: 180deg;
     }
 
     .highlights-main-container .highlights-items-inner-container .float-container.active .title-container > .title{
@@ -924,6 +974,10 @@ Screen width greater than 2000px media quries
         opacity: 1;
         transition: all 0.2s 0.5s ease-in-out;
     }
+    .mobile-indicator{
+        display: block;
+        padding: 5px 40px;
+    }
 }
 
 
@@ -934,7 +988,18 @@ mobile responsive media quries
 
 @media screen and (max-width:550px) {
     .banner-main-container .banner-content-container .main-heading{
-        font-size: 3rem;
+        font-size: 1.8rem;
+    }
+    .banner-main-container .banner-content-container .apartment-logo{
+        width: 80vw;
+    }
+    .banner-main-container .banner-content-container .main-heading:nth-child(3){
+        font-size: 2.3rem;
+        margin-right: 30px;
+        translate: 0 -15px;
+    }
+    .banner-main-container > .section-overlay{
+        background:  linear-gradient(to right,rgba(0,0,0,0.7),rgba(0,0,0,0) 122%);
     }
     .banner-main-container .banner-content-container .sub-heading{
         font-size: 1.4rem;
@@ -955,7 +1020,7 @@ mobile responsive media quries
     }
     
     .about-us-main-container .about-us-image-container{
-        height: 35vh;
+        width: 92vw ;
     }
     .about-us-main-container .flex-main-container .text-container .text{
         text-align: justify;
@@ -1009,6 +1074,11 @@ mobile responsive media quries
     .proximity-main-container .proximity-grid-container .proximity-item-container > .proximity-overlay-container ul> li{
         font-size: 0.8rem
     }
+    .proximity-main-container .proximity-grid-container .proximity-item-container > .proximity-overlay-container{
+        transform: translateX(-90%);
+        padding-right: 10% !important;
+    }
+
     .section-main-container .section-content-container{
         padding: 10px 0;
     }
