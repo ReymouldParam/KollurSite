@@ -303,6 +303,10 @@
     align-items: center;
 }
 
+.proximity-main-container .proximity-grid-container .proximity-item-container > .icon-container > .proximity-icon-img{
+    width: 5rem;
+}
+
 .proximity-main-container .proximity-grid-container .proximity-item-container > .icon-container > i{
     font-size: 4rem;
     color: white;
@@ -843,6 +847,10 @@ Screen width greater than 2000px media quries
     .proximity-main-container .proximity-grid-container .proximity-item-container:hover > .proximity-overlay-container{
         padding: 10px 10%;
     }
+
+    .proximity-main-container .proximity-grid-container .proximity-item-container > .icon-container > .proximity-icon-img{
+        width: 4rem;
+    }
     
 }
 
@@ -1200,5 +1208,8 @@ mobile responsive media quries
     .gallery-carousel-main-container .slick-current{
         transform: scale(1);
         margin-bottom: 20px;
+    }
+    .proximity-main-container .proximity-grid-container .proximity-item-container > .icon-container > .proximity-icon-img{
+        width: 3rem;
     }
 }
