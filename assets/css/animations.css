@@ -6,7 +6,7 @@
     transform: translateY(+100%);
     transition: var(--transition-value);
 }
-
+/* zoominEffect */
 .slideUpHalfAnimDefault{
     transform: translateY(+50%);
     transition: var(--transition-value);
@@ -163,5 +163,21 @@
     }
     100%{
         transform: translateX(70%) translateY(-40%) scale(0.3);
+    }
+}
+
+@media screen and (max-width:750px){
+    .slick-slide {
+        transform: none !important; /* Ensures no unwanted transforms */
+        transition: transform 0.5s ease !important; /* Smoothens transitions */
+    }
+    
+    .gallery-carousel-main-container .slick-track {
+        display: flex;
+        align-items: center;
+    }
+    
+    .slick-list {
+        overflow: hidden; /* Ensures no overflow or jumps */
     }
 }
